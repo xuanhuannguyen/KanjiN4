@@ -1848,3 +1848,17 @@ button:focus-visible, input:focus-visible { outline-color: rgba(40, 120, 227, .4
 @media (prefers-reduced-motion: reduce) {
   .kanji-stroke-preview-number { transition: none; }
 }
+
+.study-stage-actions { display: flex; align-items: center; gap: 6px; }
+.study-shuffle-button { min-height: 34px; gap: 5px; padding: 0 10px; font-size: 12px; }
+.study-quiz-meta { flex-wrap: wrap; }
+.study-quiz-shuffle { min-height: 34px; gap: 5px; margin-left: auto; padding: 0 10px; font-size: 12px; }
+.hikari-test-status-actions { flex-wrap: wrap; }
+
+@media (max-width: 600px) {
+  .study-stage-actions { gap: 2px; }
+  .study-shuffle-button { padding: 0 7px; font-size: 11px; }
+  .study-flip-hint { padding: 4px 6px; font-size: 11px; }
+  .study-quiz-meta { row-gap: 8px; }
+  .study-quiz-shuffle { margin-left: 0; }
+}

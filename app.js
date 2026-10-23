@@ -38,6 +38,7 @@ let flashcardState = {
   mode: "flashcard",
   domain: "core",
   index: 0,
+  order: null,
   direction: "kanji-to-meaning",
   flipped: false,
   mastered: new Set(),
@@ -126,7 +127,7 @@ function navigate(view, params = {}) {
   }
   if (view === "kanji-detail") selectedCoreId = coreId;
   if (view === "flashcards" && (route.lesson !== flashcardState.lesson || domain !== flashcardState.domain)) {
-    flashcardState = { mode: "flashcard", domain, lesson: lessonNumber, index: 0, direction: domain === "vocab" ? "term-to-meaning" : "kanji-to-meaning", flipped: false, mastered: new Set(), review: new Set(), quiz: null, match: null };
+    flashcardState = { mode: "flashcard", domain, lesson: lessonNumber, index: 0, order: null, direction: domain === "vocab" ? "term-to-meaning" : "kanji-to-meaning", flipped: false, mastered: new Set(), review: new Set(), quiz: null, match: null };
   }
   if (view === "test") testState = { started: false, submitted: false, questions: [], answers: {}, index: 0, lesson: lessonNumber, domain };
   app.classList.remove("sidebar-open");
@@ -161,6 +162,13 @@ function icon(name, size = 20) {
 
 function getLesson(number) { return lessons.find(lesson => lesson.number === Number(number)); }
 function getStudyItems(lesson, domain = flashcardState.domain) { return domain === "vocab" ? lesson?.vocab || [] : lesson?.core || []; }
+function getFlashcardItems(lesson) {
+  const items = getStudyItems(lesson);
+  if (!Array.isArray(flashcardState.order) || flashcardState.order.length !== items.length) return items;
+  const itemsById = new Map(items.map(item => [item.id, item]));
+  const orderedItems = flashcardState.order.map(id => itemsById.get(id)).filter(Boolean);
+  return orderedItems.length === items.length ? orderedItems : items;
+}
 function isStudyKnown(item, domain = flashcardState.domain) { return domain === "vocab" ? isVocabKnown(item) : isCoreKnown(item); }
 function studyTerm(item, domain = flashcardState.domain) { return domain === "vocab" ? item.word : item.kanji; }
 function studyMeaning(item) { return item.meaning || item.meaningsVi?.[0] || ""; }
@@ -491,7 +499,17 @@ function renderKanjiDetail() {
 }
 
 function shuffled(items) {
-  return [...items].sort(() => Math.random() - 0.5);
+  const result = [...items];
+  for (let index = result.length - 1; index > 0; index -= 1) {
+    const swapIndex = Math.floor(Math.random() * (index + 1));
+    [result[index], result[swapIndex]] = [result[swapIndex], result[index]];
+  }
+  return result;
+}
+
+function orderedQuizOptions(target, distractors, items) {
+  const selectedIds = new Set([target.id, ...distractors.map(item => item.id)]);
+  return items.filter(item => selectedIds.has(item.id));
 }
 
 function prepareLessonQuizQuestion(lesson) {
@@ -502,7 +520,7 @@ function prepareLessonQuizQuestion(lesson) {
   const distractors = getRandomItems(items.filter(item => item.id !== target.id), Math.min(3, items.length - 1));
   quiz.question = {
     target,
-    options: shuffled([target, ...distractors]),
+    options: orderedQuizOptions(target, distractors, items),
     direction: flashcardState.domain === "vocab"
       ? (quiz.index % 2 === 0 ? "term-to-meaning" : "meaning-to-term")
       : (quiz.index % 2 === 0 ? "kanji-to-meaning" : "meaning-to-kanji"),
@@ -542,7 +560,7 @@ function renderLessonQuiz(lesson) {
     : question.direction === "kanji-to-meaning"
       ? `<span class="study-prompt-label">Chọn cách đọc và nghĩa đúng</span><strong class="study-quiz-glyph" lang="ja">${escapeHtml(target.kanji)}</strong>`
       : `<span class="study-prompt-label">Chọn chữ Kanji</span><div class="study-vocab-meaning"><span lang="ja">${escapeHtml(coreReadings(target))}</span><strong class="study-quiz-meaning">${escapeHtml(studyMeaning(target))}</strong></div>`;
-  return `<section class="study-quiz-card"><div class="study-quiz-meta"><span>Câu ${quiz.index + 1} / ${quiz.questions.length}</span><span>Đúng: ${quiz.score}</span></div><div class="quiz-progress"><i style="width:${percent(quiz.index, quiz.questions.length)}%"></i></div><div class="study-quiz-prompt">${prompt}</div><div class="study-quiz-options">${question.options.map(option => {
+  return `<section class="study-quiz-card"><div class="study-quiz-meta"><span>Câu ${quiz.index + 1} / ${quiz.questions.length}</span><span>Đúng: ${quiz.score}</span><button type="button" class="button button-outline study-quiz-shuffle" data-action="shuffle-study-quiz">${icon("repeat", 15)} Trộn câu hỏi</button></div><div class="quiz-progress"><i style="width:${percent(quiz.index, quiz.questions.length)}%"></i></div><div class="study-quiz-prompt">${prompt}</div><div class="study-quiz-options">${question.options.map(option => {
     const label = isVocab
       ? question.direction === "term-to-meaning" ? "" : option.word
       : question.direction === "kanji-to-meaning" ? "" : option.kanji;
@@ -573,7 +591,7 @@ function makeTestQuestion(target, items, domain, index) {
   const distractors = getRandomItems(items.filter(item => item.id !== target.id), Math.min(3, items.length - 1));
   return {
     target,
-    options: shuffled([target, ...distractors]),
+    options: orderedQuizOptions(target, distractors, items),
     direction: domain === "vocab"
       ? (index % 2 === 0 ? "term-to-meaning" : "meaning-to-term")
       : (index % 2 === 0 ? "kanji-to-meaning" : "meaning-to-kanji")
@@ -655,7 +673,7 @@ function renderKanjiTest() {
     return `<button type="button" class="hikari-test-option ${currentAnswer === option.id ? "selected" : ""}" data-test-answer="${option.id}"><span>${index + 1}</span>${labelMarkup}</button>`;
   }).join("");
   return `<div class="hikari-test-page">
-    <section class="hikari-test-status"><div class="hikari-test-status-row"><span class="hikari-test-domain">${isVocab ? "Vocab" : "Core"}</span><b>Câu ${testState.index + 1} / ${total}</b><div class="hikari-test-status-actions"><button class="button button-outline" type="button" data-test-submit>Nộp bài</button><button class="hikari-test-exit" type="button" data-nav="lesson">× Thoát</button></div></div><div class="hikari-test-progress"><i style="width:${percentDone}%"></i></div></section>
+    <section class="hikari-test-status"><div class="hikari-test-status-row"><span class="hikari-test-domain">${isVocab ? "Vocab" : "Core"}</span><b>Câu ${testState.index + 1} / ${total}</b><div class="hikari-test-status-actions"><button class="button button-outline" type="button" data-test-shuffle>${icon("repeat", 15)} Trộn câu</button><button class="button button-outline" type="button" data-test-submit>Nộp bài</button><button class="hikari-test-exit" type="button" data-nav="lesson">× Thoát</button></div></div><div class="hikari-test-progress"><i style="width:${percentDone}%"></i></div></section>
     <nav class="hikari-question-palette" aria-label="Điều hướng câu hỏi"><div class="hikari-palette-heading"><b>Bảng câu hỏi</b><span>Đã trả lời: ${answered}/${total}</span></div><div class="hikari-question-grid">${testState.questions.map((_, index) => `<button type="button" class="${testState.index === index ? "current" : ""} ${testState.answers[index] ? "answered" : ""}" data-test-question="${index}" aria-current="${testState.index === index ? "step" : "false"}">${index + 1}</button>`).join("")}</div></nav>
     <section class="hikari-test-question"><div class="hikari-question-prompt">${prompt}</div><div class="hikari-test-options">${options}</div><div class="hikari-test-question-footer"><button class="button button-outline" type="button" data-test-prev ${testState.index === 0 ? "disabled" : ""}>← Câu trước</button><button class="button button-primary" type="button" data-test-next ${testState.index === total - 1 ? "disabled" : ""}>Câu sau →</button></div></section>
   </div>`;
@@ -666,7 +684,7 @@ function renderFlashcards() {
   if (!lesson) return `<div class="empty-state"><b>Không tìm thấy bài học</b><button class="button button-primary" data-nav="lessons">Về lộ trình</button></div>`;
   const domain = flashcardState.domain === "vocab" ? "vocab" : "core";
   const isVocab = domain === "vocab";
-  const items = getStudyItems(lesson, domain);
+  const items = getFlashcardItems(lesson);
   if (!items.length) return `<div class="empty-state"><b>Bài này chưa có ${isVocab ? "từ vựng" : "Kanji Core"}.</b><button class="button button-outline" data-nav="lesson">Quay lại bài học</button></div>`;
   const modes = [
     ["flashcard", "Flashcard"],
@@ -709,7 +727,7 @@ function renderFlashcards() {
   return `${head}<section class="hikari-study-card" aria-label="Flashcard ${isVocab ? "từ vựng" : "Kanji Core"}">
     <div class="study-progress-bar" role="progressbar" aria-valuenow="${progressPercent}" aria-valuemin="0" aria-valuemax="100" aria-label="Tiến độ thẻ"><i style="width:${progressPercent}%"></i></div>
     <header class="study-card-header"><div class="study-direction-control" role="group" aria-label="Hướng học"><button type="button" class="${flashcardState.direction === (isVocab ? "term-to-meaning" : "kanji-to-meaning") ? "active" : ""}" data-study-direction="${isVocab ? "term-to-meaning" : "kanji-to-meaning"}" aria-pressed="${flashcardState.direction === (isVocab ? "term-to-meaning" : "kanji-to-meaning")}">${isVocab ? "Từ → Nghĩa" : "Chữ Hán → Nghĩa"}</button><button type="button" class="${flashcardState.direction === (isVocab ? "meaning-to-term" : "meaning-to-kanji") ? "active" : ""}" data-study-direction="${isVocab ? "meaning-to-term" : "meaning-to-kanji"}" aria-pressed="${flashcardState.direction === (isVocab ? "meaning-to-term" : "meaning-to-kanji")}">${isVocab ? "Nghĩa → Từ" : "Nghĩa → Chữ Hán"}</button></div><div class="study-card-counter"><span>Thẻ ${index + 1} / ${items.length}</span><span class="scope-badge">Bài ${lesson.number} · Lưu trên máy</span></div><div class="study-session-stats"><span class="stat-known">Đã thuộc: ${knownCount}</span><span class="stat-review">Chưa thuộc: ${flashcardState.review.size}</span></div></header>
-    <div class="study-stage"><div class="study-stage-top"><span class="scope-badge">${String(lesson.number).padStart(2, "0")} · ${String(index + 1).padStart(2, "0")}</span><button class="study-flip-hint" type="button" data-action="flashcard-flip">${flashcardState.flipped ? "Nhấn để xem mặt trước" : "Nhấn để lật xem đáp án"}</button></div><div class="flashcard-frame"><div class="flashcard-face ${!flashcardState.flipped ? "active" : ""}" data-action="flashcard-flip" aria-hidden="${flashcardState.flipped}">${vocabAudioButton}${front}</div><div class="flashcard-face ${flashcardState.flipped ? "active" : ""}" data-action="flashcard-flip" aria-hidden="${!flashcardState.flipped}">${vocabAudioButton}${back}</div></div></div>
+    <div class="study-stage"><div class="study-stage-top"><span class="scope-badge">${String(lesson.number).padStart(2, "0")} · ${String(index + 1).padStart(2, "0")}</span><div class="study-stage-actions"><button class="button button-outline study-shuffle-button" type="button" data-action="shuffle-flashcards">${icon("repeat", 15)} Trộn thẻ</button><button class="study-flip-hint" type="button" data-action="flashcard-flip">${flashcardState.flipped ? "Nhấn để xem mặt trước" : "Nhấn để lật xem đáp án"}</button></div></div><div class="flashcard-frame"><div class="flashcard-face ${!flashcardState.flipped ? "active" : ""}" data-action="flashcard-flip" aria-hidden="${flashcardState.flipped}">${vocabAudioButton}${front}</div><div class="flashcard-face ${flashcardState.flipped ? "active" : ""}" data-action="flashcard-flip" aria-hidden="${!flashcardState.flipped}">${vocabAudioButton}${back}</div></div></div>
     <footer class="study-card-footer"><div class="study-card-nav"><button type="button" class="button button-outline" data-action="flashcard-prev" ${index === 0 ? "disabled" : ""}><kbd>←</kbd> Trước</button><button type="button" class="button button-primary" data-action="flashcard-flip"><kbd>Space</kbd> ${flashcardState.flipped ? "Mặt trước" : "Lật thẻ"}</button><button type="button" class="button button-outline" data-action="flashcard-next" ${index === items.length - 1 ? "disabled" : ""}>Tiếp <kbd>→</kbd></button></div><div class="study-card-feedback"><button type="button" class="button button-ghost review-action" data-action="flashcard-review"><kbd>X</kbd> Chưa thuộc</button><button type="button" class="button button-ghost mastered-action" data-action="flashcard-mastered"><kbd>Z</kbd> Đã thuộc</button>${index || knownCount ? `<button type="button" class="button button-ghost" data-action="flashcard-reset">Học lại từ đầu</button>` : ""}</div></footer>
   </section>`;
 }
@@ -717,7 +735,7 @@ function renderFlashcards() {
 function markCurrentFlashcard(known) {
   const lesson = getLesson(route.lesson);
   const domain = flashcardState.domain;
-  const items = getStudyItems(lesson, domain);
+  const items = getFlashcardItems(lesson);
   const item = items[flashcardState.index];
   if (!item) return;
   const knownBefore = isStudyKnown(item, domain);
@@ -794,7 +812,7 @@ function renderPractice() {
 }
 
 function getRandomItems(list, count) {
-  return [...list].sort(() => Math.random() - 0.5).slice(0, count);
+  return shuffled(list).slice(0, count);
 }
 
 function showToast(message) {
@@ -856,6 +874,12 @@ app.addEventListener("click", event => {
   if (target.dataset.test) { navigate("test", { lesson: Number(target.dataset.test), domain: target.dataset.domain || "core" }); return; }
   if (target.dataset.testRetry !== undefined) { testState = { ...testState, submitted: false, answers: {}, index: 0 }; render(); return; }
   if (target.dataset.testStart !== undefined) { startKanjiTest(getLesson(route.lesson), route.domain); return; }
+  if (target.hasAttribute("data-test-shuffle")) {
+    const answeredCount = Object.keys(testState.answers).length;
+    if (answeredCount && !window.confirm("Trộn lại câu hỏi sẽ xóa các câu trả lời hiện tại. Bạn muốn tiếp tục?")) return;
+    startKanjiTest(getLesson(route.lesson), route.domain);
+    return;
+  }
   if (target.dataset.testAnswer) { testState.answers[testState.index] = target.dataset.testAnswer; render(); return; }
   if (target.dataset.testQuestion !== undefined) { testState.index = Number(target.dataset.testQuestion); render(); return; }
   if (target.hasAttribute("data-test-prev")) { testState.index = Math.max(0, testState.index - 1); render(); return; }
@@ -920,9 +944,24 @@ app.addEventListener("click", event => {
     render();
     return;
   }
+  if (target.dataset.action === "shuffle-flashcards") {
+    const items = getStudyItems(getLesson(route.lesson));
+    flashcardState.order = shuffled(items).map(item => item.id);
+    flashcardState.index = 0;
+    flashcardState.flipped = false;
+    render();
+    showToast("Đã trộn thứ tự flashcard");
+    return;
+  }
+  if (target.dataset.action === "shuffle-study-quiz") {
+    startLessonQuiz(getLesson(route.lesson));
+    render();
+    showToast("Đã trộn lại thứ tự câu hỏi");
+    return;
+  }
   if (target.dataset.action === "flashcard-flip") { flashcardState.flipped = !flashcardState.flipped; render(); return; }
   if (target.dataset.action === "flashcard-prev") { flashcardState.index = Math.max(0, flashcardState.index - 1); flashcardState.flipped = false; render(); return; }
-  if (target.dataset.action === "flashcard-next") { flashcardState.index = Math.min(getStudyItems(getLesson(route.lesson)).length - 1, flashcardState.index + 1); flashcardState.flipped = false; render(); return; }
+  if (target.dataset.action === "flashcard-next") { flashcardState.index = Math.min(getFlashcardItems(getLesson(route.lesson)).length - 1, flashcardState.index + 1); flashcardState.flipped = false; render(); return; }
   if (target.dataset.action === "flashcard-review") { markCurrentFlashcard(false); return; }
   if (target.dataset.action === "flashcard-mastered") { markCurrentFlashcard(true); return; }
   if (target.dataset.action === "flashcard-reset") { flashcardState.index = 0; flashcardState.flipped = false; flashcardState.mastered.clear(); flashcardState.review.clear(); render(); return; }
@@ -992,7 +1031,7 @@ window.addEventListener("popstate", () => {
     if (core) { route.lesson = core.lesson; selectedCoreId = core.id; }
   }
   if (route.view === "flashcards" && (route.lesson !== flashcardState.lesson || route.domain !== flashcardState.domain)) {
-    flashcardState = { mode: "flashcard", domain: route.domain, lesson: route.lesson, index: 0, direction: route.domain === "vocab" ? "term-to-meaning" : "kanji-to-meaning", flipped: false, mastered: new Set(), review: new Set(), quiz: null, match: null };
+    flashcardState = { mode: "flashcard", domain: route.domain, lesson: route.lesson, index: 0, order: null, direction: route.domain === "vocab" ? "term-to-meaning" : "kanji-to-meaning", flipped: false, mastered: new Set(), review: new Set(), quiz: null, match: null };
   }
   if (route.view === "test" && (route.lesson !== testState.lesson || route.domain !== testState.domain)) testState = { started: false, submitted: false, questions: [], answers: {}, index: 0, lesson: route.lesson, domain: route.domain };
   render();
@@ -1018,7 +1057,7 @@ async function boot() {
     }
     if (route.view === "test") testState = { started: false, submitted: false, questions: [], answers: {}, index: 0, lesson: route.lesson, domain: route.domain };
     if (route.view === "flashcards") {
-      flashcardState = { mode: "flashcard", domain: route.domain || "core", lesson: route.lesson, index: 0, direction: route.domain === "vocab" ? "term-to-meaning" : "kanji-to-meaning", flipped: false, mastered: new Set(), review: new Set(), quiz: null, match: null };
+      flashcardState = { mode: "flashcard", domain: route.domain || "core", lesson: route.lesson, index: 0, order: null, direction: route.domain === "vocab" ? "term-to-meaning" : "kanji-to-meaning", flipped: false, mastered: new Set(), review: new Set(), quiz: null, match: null };
     }
     progress.knownCore = progress.knownCore.filter(id => coreById.has(id));
     progress.knownVocab = progress.knownVocab.filter(id => vocabById.has(id));
