@@ -21,6 +21,7 @@ Mở `http://localhost:8000`. Cần dùng static server để trình duyệt t�
 - `scripts/build_data.py` tạo `data/lessons.json` với 200 Kanji Core, 637 từ vựng, khóa ổn định, liên kết Kanji–từ và các trường theo mẫu Hikari. Những dữ liệu chưa được xác minh như nét, bộ thủ, pitch accent, phân tích đọc và ví dụ được để trống/null; trạng thái nội dung là `draft`.
 - Mỗi bài có bộ flashcard, ghép cặp và trắc nghiệm riêng cho Kanji Core và từ vựng. Không trộn dữ liệu của các bài trong phiên học.
 - `app.js` hiển thị bài học, tra cứu từ vựng, phát âm bằng Web Speech API nếu trình duyệt có giọng Nhật, và ghi tiến độ cục bộ.
+- Trang chi tiết Kanji Core có khung xem thứ tự nét và modal luyện viết theo Hikari: có hướng dẫn từng nét, tự viết rồi kiểm tra, và viết tự do. Việc vẽ/chấm chạy trong trình duyệt, không gửi nét viết hay tiến độ luyện lên máy chủ.
 - `sw.js` cache vỏ ứng dụng và các tệp được tải để hỗ trợ dùng lại khi offline.
 
 ## Cấu trúc Kanji theo Hikari
@@ -39,6 +40,7 @@ Mỗi ảnh hoàn chỉnh có ba bước ngang trên nền trắng ấm: cảnh 
 - [LearnJapaneseAZ — Kanji Look and Learn Lesson 1](https://learnjapaneseaz.com/kanji-look-and-learn-lesson-1.html) — tham khảo nghĩa, gợi nhớ và ví dụ từ.
 - [LearnJapaneseAZ — Kanji Look and Learn Lesson 2](https://learnjapaneseaz.com/kanji-look-and-learn-lesson-2.html)
 - [Japan Foundation — Kanji Memory Hint](https://www.jpf.go.jp/j/kansai/clip/kanjimemoryhint/)
+- [KanjiVG](https://github.com/KanjiVG/kanjivg), release `r20250816` — SVG thứ tự nét cho 200 Kanji Core; dữ liệu được giữ trong `assets/kanji-strokes/` và tuân theo CC BY-SA 3.0 (xem `assets/kanji-strokes/ATTRIBUTION.md`).
 
 ## Tạo lại dữ liệu
 
@@ -46,5 +48,11 @@ Sau khi sửa Markdown nguồn:
 
 ```sh
 python3 scripts/build_data.py
+```
+
+Sau khi tải release KanjiVG `r20250816`, có thể nhập lại SVG và số nét bằng:
+
+```sh
+python3 scripts/import_kanjivg.py /path/to/kanjivg-20250816-main.zip
 ```
 # KanjiN4

@@ -1,0 +1,2787 @@
+{
+  "source": {
+    "name": "Learn Japanese AZ — Kanji Look And Learn",
+    "indexUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-n5-n4.html",
+    "lessonPagesChecked": 32,
+    "uniqueCharactersFound": 512,
+    "note": "Use page meanings and diagrams as learning references. Shipped illustrations are newly generated, text-free mnemonic candidates, not copies of source images."
+  },
+  "characters": {
+    "lesson-01-core-01": {
+      "coreId": "lesson-01-core-01",
+      "lesson": 1,
+      "character": "住",
+      "meaningVi": "sinh sống, cư trú",
+      "mnemonicVi": "",
+      "hintImage": "./assets/kanji/lesson-01-core-01.webp",
+      "source": {
+        "lesson": 13,
+        "meaningEn": "to live",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-13.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-13-205.png"
+      }
+    },
+    "lesson-01-core-02": {
+      "coreId": "lesson-01-core-02",
+      "lesson": 1,
+      "character": "所",
+      "meaningVi": "nơi, chỗ",
+      "mnemonicVi": "",
+      "hintImage": "./assets/kanji/lesson-01-core-02.webp",
+      "source": {
+        "lesson": 20,
+        "meaningEn": "place",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-20.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-20-307.png"
+      }
+    },
+    "lesson-01-core-03": {
+      "coreId": "lesson-01-core-03",
+      "lesson": 1,
+      "character": "京",
+      "meaningVi": "kinh đô",
+      "mnemonicVi": "",
+      "hintImage": "./assets/kanji/lesson-01-core-03.webp",
+      "source": {
+        "lesson": 19,
+        "meaningEn": "capital",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-19.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-19-300.png"
+      }
+    },
+    "lesson-01-core-04": {
+      "coreId": "lesson-01-core-04",
+      "lesson": 1,
+      "character": "都",
+      "meaningVi": "thủ đô, đô thị",
+      "mnemonicVi": "",
+      "hintImage": "./assets/kanji/lesson-01-core-04.webp",
+      "source": {
+        "lesson": 20,
+        "meaningEn": "metropolis",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-20.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-20-310.png"
+      }
+    },
+    "lesson-01-core-05": {
+      "coreId": "lesson-01-core-05",
+      "lesson": 1,
+      "character": "府",
+      "meaningVi": "phủ; đơn vị hành chính cấp tỉnh ở Nhật",
+      "mnemonicVi": "",
+      "hintImage": "./assets/kanji/lesson-01-core-05.webp",
+      "source": null
+    },
+    "lesson-01-core-06": {
+      "coreId": "lesson-01-core-06",
+      "lesson": 1,
+      "character": "県",
+      "meaningVi": "tỉnh (đơn vị hành chính Nhật Bản)",
+      "mnemonicVi": "",
+      "hintImage": "./assets/kanji/lesson-01-core-06.webp",
+      "source": {
+        "lesson": 20,
+        "meaningEn": "prefecture",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-20.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-20-311.png"
+      }
+    },
+    "lesson-01-core-07": {
+      "coreId": "lesson-01-core-07",
+      "lesson": 1,
+      "character": "市",
+      "meaningVi": "thành phố; chợ",
+      "mnemonicVi": "",
+      "hintImage": "./assets/kanji/lesson-01-core-07.webp",
+      "source": {
+        "lesson": 7,
+        "meaningEn": "city / market",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-7.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-7-99.png"
+      }
+    },
+    "lesson-01-core-08": {
+      "coreId": "lesson-01-core-08",
+      "lesson": 1,
+      "character": "区",
+      "meaningVi": "quận, khu",
+      "mnemonicVi": "",
+      "hintImage": "./assets/kanji/lesson-01-core-08.webp",
+      "source": {
+        "lesson": 20,
+        "meaningEn": "zone",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-20.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-20-312.png"
+      }
+    },
+    "lesson-01-core-09": {
+      "coreId": "lesson-01-core-09",
+      "lesson": 1,
+      "character": "町",
+      "meaningVi": "thị trấn, khu phố",
+      "mnemonicVi": "",
+      "hintImage": "./assets/kanji/lesson-01-core-09.webp",
+      "source": {
+        "lesson": 7,
+        "meaningEn": "town",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-7.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-7-100.png"
+      }
+    },
+    "lesson-01-core-10": {
+      "coreId": "lesson-01-core-10",
+      "lesson": 1,
+      "character": "村",
+      "meaningVi": "thôn, làng",
+      "mnemonicVi": "",
+      "hintImage": "./assets/kanji/lesson-01-core-10.webp",
+      "source": {
+        "lesson": 7,
+        "meaningEn": "village",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-7.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-7-101.png"
+      }
+    },
+    "lesson-02-core-01": {
+      "coreId": "lesson-02-core-01",
+      "lesson": 2,
+      "character": "明",
+      "meaningVi": "sáng; rõ ràng",
+      "mnemonicVi": "Mặt trời (日, NHẬT) và mặt trăng (月, NGUYỆT) cùng chiếu thì rất SÁNG (MINH 明).",
+      "hintImage": "./assets/kanji/lesson-02-core-01.webp",
+      "source": {
+        "lesson": 6,
+        "meaningEn": "bright",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-6.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-6-94.png"
+      }
+    },
+    "lesson-02-core-02": {
+      "coreId": "lesson-02-core-02",
+      "lesson": 2,
+      "character": "暗",
+      "meaningVi": "tối; u ám",
+      "mnemonicVi": "Chủ nhật (日, NHẬT) mà âm thanh (音, ÂM) lại rất u ám (ÁM 暗).",
+      "hintImage": "./assets/kanji/lesson-02-core-02.webp",
+      "source": {
+        "lesson": 15,
+        "meaningEn": "dark",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-15.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-15-235.png"
+      }
+    },
+    "lesson-02-core-03": {
+      "coreId": "lesson-02-core-03",
+      "lesson": 2,
+      "character": "遠",
+      "meaningVi": "xa",
+      "mnemonicVi": "Vĩnh viễn (*永遠・えいえん*) gợi cảm giác ở rất xa (VIỄN 遠).",
+      "hintImage": "./assets/kanji/lesson-02-core-03.webp",
+      "source": {
+        "lesson": 15,
+        "meaningEn": "far",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-15.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-15-225.png"
+      }
+    },
+    "lesson-02-core-04": {
+      "coreId": "lesson-02-core-04",
+      "lesson": 2,
+      "character": "近",
+      "meaningVi": "gần",
+      "mnemonicVi": "Cầm búa (斤, CÂN) rồi bước đi (⻌, SƯỚC) tiến tới gần (CẬN 近).",
+      "hintImage": "./assets/kanji/lesson-02-core-04.webp",
+      "source": {
+        "lesson": 15,
+        "meaningEn": "near",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-15.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-15-226.png"
+      }
+    },
+    "lesson-02-core-05": {
+      "coreId": "lesson-02-core-05",
+      "lesson": 2,
+      "character": "強",
+      "meaningVi": "mạnh; cường",
+      "mnemonicVi": "Tưởng tượng con sâu cầm cung thì rất mạnh (CƯỜNG 強).",
+      "hintImage": "./assets/kanji/lesson-02-core-05.webp",
+      "source": {
+        "lesson": 8,
+        "meaningEn": "strong",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-8.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-8-125.png"
+      }
+    },
+    "lesson-02-core-06": {
+      "coreId": "lesson-02-core-06",
+      "lesson": 2,
+      "character": "弱",
+      "meaningVi": "yếu",
+      "mnemonicVi": "Nhìn như hai cây cung mà vẫn yếu (NHƯỢC 弱).",
+      "hintImage": "./assets/kanji/lesson-02-core-06.webp",
+      "source": {
+        "lesson": 15,
+        "meaningEn": "weak",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-15.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-15-233.png"
+      }
+    },
+    "lesson-02-core-07": {
+      "coreId": "lesson-02-core-07",
+      "lesson": 2,
+      "character": "重",
+      "meaningVi": "nặng; quan trọng; chồng/lặp",
+      "mnemonicVi": "Đi ngàn dặm (*千里*) thì nhẹ cũng thành nặng (TRỌNG 重).",
+      "hintImage": "./assets/kanji/lesson-02-core-07.webp",
+      "source": {
+        "lesson": 15,
+        "meaningEn": "heavy / to pile up",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-15.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-15-230.png"
+      }
+    },
+    "lesson-02-core-08": {
+      "coreId": "lesson-02-core-08",
+      "lesson": 2,
+      "character": "軽",
+      "meaningVi": "nhẹ",
+      "mnemonicVi": "Vừa có xe (車, XA), vừa liên tưởng đến đất, khiến ta nhớ chữ nhẹ (KHINH 軽).",
+      "hintImage": "./assets/kanji/lesson-02-core-08.webp",
+      "source": {
+        "lesson": 15,
+        "meaningEn": "light",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-15.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-15-231.png"
+      }
+    },
+    "lesson-02-core-09": {
+      "coreId": "lesson-02-core-09",
+      "lesson": 2,
+      "character": "太",
+      "meaningVi": "to, dày, mập",
+      "mnemonicVi": "Chữ 大 (ĐẠI) thêm một chấm 丶 → liên tưởng dáng người to/mập (THÁI 太).",
+      "hintImage": "./assets/kanji/lesson-02-core-09.webp",
+      "source": {
+        "lesson": 15,
+        "meaningEn": "think",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-15.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-15-236.png"
+      },
+      "sourceWarning": "Learn Japanese AZ lists 太 as 'think' on Lesson 15; that label appears mismatched. Use the local N4 meaning for this card."
+    },
+    "lesson-02-core-10": {
+      "coreId": "lesson-02-core-10",
+      "lesson": 2,
+      "character": "細",
+      "meaningVi": "mảnh, thon, nhỏ; chi tiết",
+      "mnemonicVi": "Dùng sợi tơ (糸) đo đạc, phân chia ruộng (田) thật tỉ mỉ, tinh tế (TẾ 細).",
+      "hintImage": "./assets/kanji/lesson-02-core-10.webp",
+      "source": {
+        "lesson": 32,
+        "meaningEn": "thin",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-32.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-32-511.png"
+      }
+    },
+    "lesson-03-core-01": {
+      "coreId": "lesson-03-core-01",
+      "lesson": 3,
+      "character": "特",
+      "meaningVi": "đặc biệt, nổi bật",
+      "mnemonicVi": "Con trâu (牛) được nuôi ở chùa (寺) là chuyện rất đặc biệt (ĐẶC 特).",
+      "hintImage": "./assets/kanji/lesson-03-core-01.webp",
+      "source": {
+        "lesson": 19,
+        "meaningEn": "special",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-19.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-19-292.png"
+      }
+    },
+    "lesson-03-core-02": {
+      "coreId": "lesson-03-core-02",
+      "lesson": 3,
+      "character": "別",
+      "meaningVi": "khác; riêng; chia lìa, phân biệt",
+      "mnemonicVi": "Tưởng tượng dùng miệng (口) để phân biệt; bên cạnh có nét tựa dao (刂) → nhớ chữ BIỆT 別.",
+      "hintImage": "./assets/kanji/lesson-03-core-02.webp",
+      "source": {
+        "lesson": 19,
+        "meaningEn": "to separate",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-19.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-19-293.png"
+      }
+    },
+    "lesson-03-core-03": {
+      "coreId": "lesson-03-core-03",
+      "lesson": 3,
+      "character": "有",
+      "meaningVi": "có, tồn tại",
+      "mnemonicVi": "“Ta có em Nguyệt (月)” → nhớ nghĩa có (HỮU 有).",
+      "hintImage": "./assets/kanji/lesson-03-core-03.webp",
+      "source": {
+        "lesson": 17,
+        "meaningEn": "to exist",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-17.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-17-264.png"
+      }
+    },
+    "lesson-03-core-04": {
+      "coreId": "lesson-03-core-04",
+      "lesson": 3,
+      "character": "便",
+      "meaningVi": "thuận tiện; thư/chuyến vận chuyển",
+      "mnemonicVi": "Nếu người (亻) có đôi cánh để đi lại thì thật tiện (TIỆN 便).",
+      "hintImage": "./assets/kanji/lesson-03-core-04.webp",
+      "source": {
+        "lesson": 19,
+        "meaningEn": "convenient / mail",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-19.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-19-303.png"
+      }
+    },
+    "lesson-03-core-05": {
+      "coreId": "lesson-03-core-05",
+      "lesson": 3,
+      "character": "利",
+      "meaningVi": "lợi ích; thuận lợi",
+      "mnemonicVi": "Dùng dao (刂) gặt lúa (禾) thu được lợi (LỢI 利).",
+      "hintImage": "./assets/kanji/lesson-03-core-05.webp",
+      "source": {
+        "lesson": 24,
+        "meaningEn": "profit",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-24.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-24-376.png"
+      }
+    },
+    "lesson-03-core-06": {
+      "coreId": "lesson-03-core-06",
+      "lesson": 3,
+      "character": "不",
+      "meaningVi": "không, bất- (phủ định)",
+      "mnemonicVi": "Hình dung cây bị bẻ mất ngọn, người trồng bất mãn → nhớ chữ phủ định BẤT 不.",
+      "hintImage": "./assets/kanji/lesson-03-core-06.webp",
+      "source": {
+        "lesson": 19,
+        "meaningEn": "non",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-19.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-19-302.png"
+      }
+    },
+    "lesson-03-core-07": {
+      "coreId": "lesson-03-core-07",
+      "lesson": 3,
+      "character": "切",
+      "meaningVi": "cắt; quan trọng, thiết yếu",
+      "mnemonicVi": "Điều cần thiết là có bảy (七) thanh đao (刀) để cắt → THIẾT 切.",
+      "hintImage": "./assets/kanji/lesson-03-core-07.webp",
+      "source": {
+        "lesson": 11,
+        "meaningEn": "to cut",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-11.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-11-173.png"
+      }
+    },
+    "lesson-03-core-08": {
+      "coreId": "lesson-03-core-08",
+      "lesson": 3,
+      "character": "元",
+      "meaningVi": "gốc, ban đầu; nguồn",
+      "mnemonicVi": "Vẫn còn nguyên hai chân → liên tưởng đến cái gốc, ban đầu (NGUYÊN 元).",
+      "hintImage": "./assets/kanji/lesson-03-core-08.webp",
+      "source": {
+        "lesson": 6,
+        "meaningEn": "origin",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-6.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-6-87.png"
+      }
+    },
+    "lesson-03-core-09": {
+      "coreId": "lesson-03-core-09",
+      "lesson": 3,
+      "character": "好",
+      "meaningVi": "thích, ưa; tốt, thiện cảm",
+      "mnemonicVi": "Phụ nữ (女) và con (子) ở cạnh nhau → gợi nhớ sự yêu thích (HẢO 好).",
+      "hintImage": "./assets/kanji/lesson-03-core-09.webp",
+      "source": {
+        "lesson": 6,
+        "meaningEn": "to like",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-6.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-6-95.png"
+      }
+    },
+    "lesson-03-core-10": {
+      "coreId": "lesson-03-core-10",
+      "lesson": 3,
+      "character": "急",
+      "meaningVi": "gấp, khẩn cấp; vội",
+      "mnemonicVi": "Tưởng tượng dao (⺈) kề vào tim (心), ở giữa có ヨ → tình huống rất nguy cấp (CẤP 急).",
+      "hintImage": "./assets/kanji/lesson-03-core-10.webp",
+      "source": {
+        "lesson": 16,
+        "meaningEn": "to hurry",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-16.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-16-248.png"
+      }
+    },
+    "lesson-04-core-01": {
+      "coreId": "lesson-04-core-01",
+      "lesson": 4,
+      "character": "低",
+      "meaningVi": "Thấp; thấp xuống",
+      "mnemonicVi": "Người (亻) cúi xuống thấp → ĐÊ 低.",
+      "hintImage": "./assets/kanji/lesson-04-core-01.webp",
+      "source": {
+        "lesson": 15,
+        "meaningEn": "low",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-15.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-15-232.png"
+      }
+    },
+    "lesson-04-core-02": {
+      "coreId": "lesson-04-core-02",
+      "lesson": 4,
+      "character": "広",
+      "meaningVi": "Rộng, rộng lớn; mở rộng",
+      "mnemonicVi": "Một căn nhà có không gian rộng thênh thang → QUẢNG 広.",
+      "hintImage": "./assets/kanji/lesson-04-core-02.webp",
+      "source": {
+        "lesson": 6,
+        "meaningEn": "spacious",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-6.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-6-91.png"
+      }
+    },
+    "lesson-04-core-03": {
+      "coreId": "lesson-04-core-03",
+      "lesson": 4,
+      "character": "短",
+      "meaningVi": "Ngắn (chiều dài, thời gian)",
+      "mnemonicVi": "Cây tên (矢) ngắn đặt cạnh một vật để đo, nhớ nghĩa ngắn → ĐOẢN 短.",
+      "hintImage": "./assets/kanji/lesson-04-core-03.webp",
+      "source": {
+        "lesson": 15,
+        "meaningEn": "short",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-15.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-15-238.png"
+      }
+    },
+    "lesson-04-core-04": {
+      "coreId": "lesson-04-core-04",
+      "lesson": 4,
+      "character": "良",
+      "meaningVi": "Tốt, tốt đẹp",
+      "mnemonicVi": "Nghĩ đến lương thiện, lương tâm → tốt → LƯƠNG 良.",
+      "hintImage": "./assets/kanji/lesson-04-core-04.webp",
+      "source": {
+        "lesson": 5,
+        "meaningEn": "good / well",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-5.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-5-69.png"
+      }
+    },
+    "lesson-04-core-05": {
+      "coreId": "lesson-04-core-05",
+      "lesson": 4,
+      "character": "悪",
+      "meaningVi": "Xấu, tệ; ác",
+      "mnemonicVi": "Dưới chữ có tim (心); tưởng tượng tâm trạng xấu đi → ÁC 悪.",
+      "hintImage": "./assets/kanji/lesson-04-core-05.webp",
+      "source": {
+        "lesson": 15,
+        "meaningEn": "bad",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-15.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-15-234.png"
+      }
+    },
+    "lesson-04-core-06": {
+      "coreId": "lesson-04-core-06",
+      "lesson": 4,
+      "character": "正",
+      "meaningVi": "Đúng, chính xác; ngay thẳng",
+      "mnemonicVi": "Mọi thứ đứng ngay, đúng vị trí → CHÍNH 正.",
+      "hintImage": "./assets/kanji/lesson-04-core-06.webp",
+      "source": {
+        "lesson": 19,
+        "meaningEn": "right",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-19.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-19-297.png"
+      }
+    },
+    "lesson-04-core-07": {
+      "coreId": "lesson-04-core-07",
+      "lesson": 4,
+      "character": "変",
+      "meaningVi": "Thay đổi; kỳ lạ, bất thường",
+      "mnemonicVi": "Cuộc sống luôn biến đổi, có lúc trở nên lạ → BIẾN 変.",
+      "hintImage": "./assets/kanji/lesson-04-core-07.webp",
+      "source": {
+        "lesson": 32,
+        "meaningEn": "to change / weird",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-32.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-32-504.png"
+      }
+    },
+    "lesson-04-core-08": {
+      "coreId": "lesson-04-core-08",
+      "lesson": 4,
+      "character": "赤",
+      "meaningVi": "Đỏ",
+      "mnemonicVi": "Nhìn đèn giao thông màu đỏ và nhớ XÍCH 赤.",
+      "hintImage": "./assets/kanji/lesson-04-core-08.webp",
+      "source": {
+        "lesson": 10,
+        "meaningEn": "red",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-10.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-10-154.png"
+      }
+    },
+    "lesson-04-core-09": {
+      "coreId": "lesson-04-core-09",
+      "lesson": 4,
+      "character": "青",
+      "meaningVi": "Xanh (thường là xanh lam; một số trường hợp xanh lục)",
+      "mnemonicVi": "Bầu trời xanh trong một ngày đẹp → THANH 青.",
+      "hintImage": "./assets/kanji/lesson-04-core-09.webp",
+      "source": {
+        "lesson": 10,
+        "meaningEn": "blue",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-10.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-10-155.png"
+      }
+    },
+    "lesson-04-core-10": {
+      "coreId": "lesson-04-core-10",
+      "lesson": 4,
+      "character": "黒",
+      "meaningVi": "Đen",
+      "mnemonicVi": "Nghĩ đến màn đêm đen như mực → HẮC 黒.",
+      "hintImage": "./assets/kanji/lesson-04-core-10.webp",
+      "source": {
+        "lesson": 10,
+        "meaningEn": "black",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-10.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-10-157.png"
+      }
+    },
+    "lesson-05-core-01": {
+      "coreId": "lesson-05-core-01",
+      "lesson": 5,
+      "character": "映",
+      "meaningVi": "Chiếu, phản chiếu; trình chiếu",
+      "mnemonicVi": "Ánh mặt trời (日) chiếu vào giữa bức hình, hình ảnh hiện lên trên màn chiếu → 映.",
+      "hintImage": "./assets/kanji/lesson-05-core-01.webp",
+      "source": {
+        "lesson": 12,
+        "meaningEn": "to project",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-12.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-12-187.png"
+      }
+    },
+    "lesson-05-core-02": {
+      "coreId": "lesson-05-core-02",
+      "lesson": 5,
+      "character": "画",
+      "meaningVi": "Tranh, hình vẽ; vạch kế hoạch",
+      "mnemonicVi": "Tưởng tượng khung tranh với nét vẽ bên trong → nhớ HỌA 画; vạch từng nét thành kế hoạch.",
+      "hintImage": "./assets/kanji/lesson-05-core-02.webp",
+      "source": {
+        "lesson": 12,
+        "meaningEn": "picture",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-12.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-12-188.png"
+      }
+    },
+    "lesson-05-core-03": {
+      "coreId": "lesson-05-core-03",
+      "lesson": 5,
+      "character": "音",
+      "meaningVi": "Âm thanh, tiếng động",
+      "mnemonicVi": "Hình dung âm thanh vang lên khi một ngày mới bắt đầu → ÂM 音.",
+      "hintImage": "./assets/kanji/lesson-05-core-03.webp",
+      "source": {
+        "lesson": 12,
+        "meaningEn": "sound",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-12.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-12-177.png"
+      }
+    },
+    "lesson-05-core-04": {
+      "coreId": "lesson-05-core-04",
+      "lesson": 5,
+      "character": "楽",
+      "meaningVi": "Âm nhạc; vui vẻ, dễ chịu",
+      "mnemonicVi": "Âm nhạc (ガク) khiến người nghe vui và thoải mái (ラク) → 楽.",
+      "hintImage": "./assets/kanji/lesson-05-core-04.webp",
+      "source": {
+        "lesson": 12,
+        "meaningEn": "fun / comfortable",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-12.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-12-178.png"
+      }
+    },
+    "lesson-05-core-05": {
+      "coreId": "lesson-05-core-05",
+      "lesson": 5,
+      "character": "歌",
+      "meaningVi": "Bài hát; ca hát",
+      "mnemonicVi": "Tưởng tượng mở miệng và cất giọng ca hát → CA 歌.",
+      "hintImage": "./assets/kanji/lesson-05-core-05.webp",
+      "source": {
+        "lesson": 12,
+        "meaningEn": "to sing",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-12.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-12-179.png"
+      }
+    },
+    "lesson-05-core-06": {
+      "coreId": "lesson-05-core-06",
+      "lesson": 5,
+      "character": "写",
+      "meaningVi": "Sao chép, chụp ảnh; ghi lại hình",
+      "mnemonicVi": "Máy ảnh ghi lại cảnh vật thành bức hình → TẢ 写.",
+      "hintImage": "./assets/kanji/lesson-05-core-06.webp",
+      "source": {
+        "lesson": 12,
+        "meaningEn": "to copy / photograph",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-12.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-12-183.png"
+      }
+    },
+    "lesson-05-core-07": {
+      "coreId": "lesson-05-core-07",
+      "lesson": 5,
+      "character": "真",
+      "meaningVi": "Thật, chân thật; đúng sự thật",
+      "mnemonicVi": "Ảnh chụp giúp giữ lại hình dáng chân thật → CHÂN 真.",
+      "hintImage": "./assets/kanji/lesson-05-core-07.webp",
+      "source": {
+        "lesson": 12,
+        "meaningEn": "true",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-12.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-12-184.png"
+      }
+    },
+    "lesson-05-core-08": {
+      "coreId": "lesson-05-core-08",
+      "lesson": 5,
+      "character": "旅",
+      "meaningVi": "Chuyến đi, du lịch",
+      "mnemonicVi": "Đeo ba lô lên đường, bắt đầu một chuyến lữ hành → LỮ 旅.",
+      "hintImage": "./assets/kanji/lesson-05-core-08.webp",
+      "source": {
+        "lesson": 20,
+        "meaningEn": "travel",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-20.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-20-318.png"
+      }
+    },
+    "lesson-05-core-09": {
+      "coreId": "lesson-05-core-09",
+      "lesson": 5,
+      "character": "世",
+      "meaningVi": "Đời, thế hệ, xã hội",
+      "mnemonicVi": "Một thế hệ nối tiếp thế hệ khác, thành dòng chảy cuộc đời → THẾ 世.",
+      "hintImage": "./assets/kanji/lesson-05-core-09.webp",
+      "source": {
+        "lesson": 18,
+        "meaningEn": "world",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-18.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-18-281.png"
+      }
+    },
+    "lesson-05-core-10": {
+      "coreId": "lesson-05-core-10",
+      "lesson": 5,
+      "character": "界",
+      "meaningVi": "Giới hạn, phạm vi, thế giới",
+      "mnemonicVi": "Hình dung những đường ranh chia ruộng (田) thành từng giới khác nhau → GIỚI 界.",
+      "hintImage": "./assets/kanji/lesson-05-core-10.webp",
+      "source": {
+        "lesson": 18,
+        "meaningEn": "boundary",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-18.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-18-282.png"
+      }
+    },
+    "lesson-06-core-01": {
+      "coreId": "lesson-06-core-01",
+      "lesson": 6,
+      "character": "仕",
+      "meaningVi": "Phục vụ, làm việc cho; việc làm",
+      "mnemonicVi": "Người (亻) làm việc như một kẻ sĩ (士) → 仕.",
+      "hintImage": "./assets/kanji/lesson-06-core-01.webp",
+      "source": {
+        "lesson": 17,
+        "meaningEn": "to serve",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-17.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-17-271.png"
+      }
+    },
+    "lesson-06-core-02": {
+      "coreId": "lesson-06-core-02",
+      "lesson": 6,
+      "character": "事",
+      "meaningVi": "Sự việc, công việc",
+      "mnemonicVi": "Một ngày phải xử lý nhiều sự việc xếp chồng lên nhau → SỰ 事.",
+      "hintImage": "./assets/kanji/lesson-06-core-02.webp",
+      "source": {
+        "lesson": 17,
+        "meaningEn": "thing",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-17.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-17-272.png"
+      }
+    },
+    "lesson-06-core-03": {
+      "coreId": "lesson-06-core-03",
+      "lesson": 6,
+      "character": "銀",
+      "meaningVi": "Bạc (kim loại), tiền bạc",
+      "mnemonicVi": "Bên trái có bộ kim (金), liên tưởng đến kim loại màu bạc → NGÂN 銀.",
+      "hintImage": "./assets/kanji/lesson-06-core-03.webp",
+      "source": {
+        "lesson": 7,
+        "meaningEn": "silver",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-7.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-7-110.png"
+      }
+    },
+    "lesson-06-core-04": {
+      "coreId": "lesson-06-core-04",
+      "lesson": 6,
+      "character": "員",
+      "meaningVi": "Thành viên, nhân viên",
+      "mnemonicVi": "Miệng (口) và tiền (貝): liên tưởng người nhân viên giao dịch tại quầy → VIÊN 員.",
+      "hintImage": "./assets/kanji/lesson-06-core-04.webp",
+      "source": {
+        "lesson": 17,
+        "meaningEn": "member",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-17.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-17-269.png"
+      }
+    },
+    "lesson-06-core-05": {
+      "coreId": "lesson-06-core-05",
+      "lesson": 6,
+      "character": "医",
+      "meaningVi": "Y học, chữa bệnh",
+      "mnemonicVi": "Hình dung dụng cụ y tế được cất trong hộp của bác sĩ → Y 医.",
+      "hintImage": "./assets/kanji/lesson-06-core-05.webp",
+      "source": {
+        "lesson": 17,
+        "meaningEn": "doctor / medicine",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-17.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-17-257.png"
+      }
+    },
+    "lesson-06-core-06": {
+      "coreId": "lesson-06-core-06",
+      "lesson": 6,
+      "character": "者",
+      "meaningVi": "Người làm nghề, người nào đó",
+      "mnemonicVi": "Nghĩ đến một người đảm nhận vai trò hay nghề nghiệp → GIẢ 者.",
+      "hintImage": "./assets/kanji/lesson-06-core-06.webp",
+      "source": {
+        "lesson": 15,
+        "meaningEn": "person",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-15.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-15-227.png"
+      }
+    },
+    "lesson-06-core-07": {
+      "coreId": "lesson-06-core-07",
+      "lesson": 6,
+      "character": "働",
+      "meaningVi": "Làm việc, lao động",
+      "mnemonicVi": "Người (亻) + động (動): con người vận động để làm việc → 働.",
+      "hintImage": "./assets/kanji/lesson-06-core-07.webp",
+      "source": {
+        "lesson": 17,
+        "meaningEn": "to work",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-17.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-17-268.png"
+      }
+    },
+    "lesson-06-core-08": {
+      "coreId": "lesson-06-core-08",
+      "lesson": 6,
+      "character": "屋",
+      "meaningVi": "Nhà, mái nhà; cửa hàng",
+      "mnemonicVi": "Liên tưởng một mái nhà che cho căn phòng hay cửa hàng → ỐC 屋.",
+      "hintImage": "./assets/kanji/lesson-06-core-08.webp",
+      "source": {
+        "lesson": 20,
+        "meaningEn": "roof / shop",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-20.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-20-308.png"
+      }
+    },
+    "lesson-06-core-09": {
+      "coreId": "lesson-06-core-09",
+      "lesson": 6,
+      "character": "産",
+      "meaningVi": "Sinh ra, sản xuất; tài sản",
+      "mnemonicVi": "Từ nơi sản xuất, hàng hóa được sinh ra → SẢN 産.",
+      "hintImage": "./assets/kanji/lesson-06-core-09.webp",
+      "source": {
+        "lesson": 17,
+        "meaningEn": "to produce",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-17.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-17-265.png"
+      }
+    },
+    "lesson-06-core-10": {
+      "coreId": "lesson-06-core-10",
+      "lesson": 6,
+      "character": "業",
+      "meaningVi": "Nghề nghiệp, công việc, ngành",
+      "mnemonicVi": "Nghĩ đến mỗi người có một ngành nghề, nghiệp riêng → NGHIỆP 業.",
+      "hintImage": "./assets/kanji/lesson-06-core-10.webp",
+      "source": {
+        "lesson": 17,
+        "meaningEn": "business",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-17.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-17-266.png"
+      }
+    },
+    "lesson-07-core-01": {
+      "coreId": "lesson-07-core-01",
+      "lesson": 7,
+      "character": "林",
+      "meaningVi": "Rừng, lùm cây",
+      "mnemonicVi": "Hai cây (木 + 木) đứng cạnh nhau tạo thành rừng nhỏ → LÂM 林.",
+      "hintImage": "./assets/kanji/lesson-07-core-01.webp",
+      "source": {
+        "lesson": 10,
+        "meaningEn": "small forest",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-10.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-10-147.png"
+      }
+    },
+    "lesson-07-core-02": {
+      "coreId": "lesson-07-core-02",
+      "lesson": 7,
+      "character": "森",
+      "meaningVi": "Rừng rậm",
+      "mnemonicVi": "Ba cây (木 + 木 + 木) mọc dày đặc tạo thành rừng rậm → SÂM 森.",
+      "hintImage": "./assets/kanji/lesson-07-core-02.webp",
+      "source": {
+        "lesson": 10,
+        "meaningEn": "forest",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-10.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-10-148.png"
+      }
+    },
+    "lesson-07-core-03": {
+      "coreId": "lesson-07-core-03",
+      "lesson": 7,
+      "character": "地",
+      "meaningVi": "Đất, mặt đất; địa điểm",
+      "mnemonicVi": "Đất (土) nằm dưới chân, tạo nên địa hình → ĐỊA 地.",
+      "hintImage": "./assets/kanji/lesson-07-core-03.webp",
+      "source": {
+        "lesson": 18,
+        "meaningEn": "land",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-18.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-18-280.png"
+      }
+    },
+    "lesson-07-core-04": {
+      "coreId": "lesson-07-core-04",
+      "lesson": 7,
+      "character": "池",
+      "meaningVi": "Ao, hồ nhỏ",
+      "mnemonicVi": "Nước (氵) tụ lại thành một ao → TRÌ 池.",
+      "hintImage": "./assets/kanji/lesson-07-core-04.webp",
+      "source": {
+        "lesson": 20,
+        "meaningEn": "pond",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-20.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-20-313.png"
+      }
+    },
+    "lesson-07-core-05": {
+      "coreId": "lesson-07-core-05",
+      "lesson": 7,
+      "character": "海",
+      "meaningVi": "Biển",
+      "mnemonicVi": "Có nước (氵) trải ra rất rộng, nghĩ đến biển → HẢI 海.",
+      "hintImage": "./assets/kanji/lesson-07-core-05.webp",
+      "source": {
+        "lesson": 10,
+        "meaningEn": "sea",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-10.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-10-150.png"
+      }
+    },
+    "lesson-07-core-06": {
+      "coreId": "lesson-07-core-06",
+      "lesson": 7,
+      "character": "洋",
+      "meaningVi": "Đại dương; phương Tây",
+      "mnemonicVi": "Nước (氵) mênh mông, rộng như đại dương → DƯƠNG 洋.",
+      "hintImage": "./assets/kanji/lesson-07-core-06.webp",
+      "source": {
+        "lesson": 12,
+        "meaningEn": "oversea",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-12.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-12-190.png"
+      }
+    },
+    "lesson-07-core-07": {
+      "coreId": "lesson-07-core-07",
+      "lesson": 7,
+      "character": "雪",
+      "meaningVi": "Tuyết",
+      "mnemonicVi": "Từ mưa (雨) trên cao, trời lạnh chuyển thành tuyết → TUYẾT 雪.",
+      "hintImage": "./assets/kanji/lesson-07-core-07.webp",
+      "source": {
+        "lesson": 31,
+        "meaningEn": "snow",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-31.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-31-494.png"
+      }
+    },
+    "lesson-07-core-08": {
+      "coreId": "lesson-07-core-08",
+      "lesson": 7,
+      "character": "光",
+      "meaningVi": "Ánh sáng, chiếu sáng",
+      "mnemonicVi": "Vệt sáng tỏa ra như tia nắng → QUANG 光.",
+      "hintImage": "./assets/kanji/lesson-07-core-08.webp",
+      "source": {
+        "lesson": 15,
+        "meaningEn": "light",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-15.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-15-239.png"
+      }
+    },
+    "lesson-07-core-09": {
+      "coreId": "lesson-07-core-09",
+      "lesson": 7,
+      "character": "台",
+      "meaningVi": "Bệ, đài; đơn vị đếm máy móc/xe",
+      "mnemonicVi": "Hình dung một chiếc máy đặt trên bệ → ĐÀI 台.",
+      "hintImage": "./assets/kanji/lesson-07-core-09.webp",
+      "source": {
+        "lesson": 12,
+        "meaningEn": "stand",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-12.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-12-185.png"
+      }
+    },
+    "lesson-07-core-10": {
+      "coreId": "lesson-07-core-10",
+      "lesson": 7,
+      "character": "風",
+      "meaningVi": "Gió; phong cách",
+      "mnemonicVi": "Luồng khí cuộn xoáy quanh cảnh vật → nhớ gió (PHONG 風).",
+      "hintImage": "./assets/kanji/lesson-07-core-10.webp",
+      "source": {
+        "lesson": 15,
+        "meaningEn": "wind",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-15.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-15-240.png"
+      }
+    },
+    "lesson-08-core-01": {
+      "coreId": "lesson-08-core-01",
+      "lesson": 8,
+      "character": "季",
+      "meaningVi": "Mùa, thời kỳ",
+      "mnemonicVi": "Tưởng tượng lúa 禾 lớn lên qua từng mùa, nuôi con 子 → QUÝ 季.",
+      "hintImage": "./assets/kanji/lesson-08-core-01.webp",
+      "source": null
+    },
+    "lesson-08-core-02": {
+      "coreId": "lesson-08-core-02",
+      "lesson": 8,
+      "character": "節",
+      "meaningVi": "Tiết, đốt (tre), dịp",
+      "mnemonicVi": "Từng đốt tre (⺮) đánh dấu từng tiết trong năm → TIẾT 節.",
+      "hintImage": "./assets/kanji/lesson-08-core-02.webp",
+      "source": null
+    },
+    "lesson-08-core-03": {
+      "coreId": "lesson-08-core-03",
+      "lesson": 8,
+      "character": "春",
+      "meaningVi": "Mùa xuân",
+      "mnemonicVi": "Nắng 日 trở lại sau mùa đông → mùa XUÂN 春.",
+      "hintImage": "./assets/kanji/lesson-08-core-03.webp",
+      "source": {
+        "lesson": 9,
+        "meaningEn": "spring",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-9.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-9-129.png"
+      }
+    },
+    "lesson-08-core-04": {
+      "coreId": "lesson-08-core-04",
+      "lesson": 8,
+      "character": "夏",
+      "meaningVi": "Mùa hè",
+      "mnemonicVi": "Hãy nhớ ngày HẠ 夏 với nắng mạnh và kỳ nghỉ hè.",
+      "hintImage": "./assets/kanji/lesson-08-core-04.webp",
+      "source": {
+        "lesson": 9,
+        "meaningEn": "summer",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-9.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-9-130.png"
+      }
+    },
+    "lesson-08-core-05": {
+      "coreId": "lesson-08-core-05",
+      "lesson": 8,
+      "character": "秋",
+      "meaningVi": "Mùa thu",
+      "mnemonicVi": "Lúa 禾 chín vàng, đồng ruộng như có lửa 火 → THU 秋.",
+      "hintImage": "./assets/kanji/lesson-08-core-05.webp",
+      "source": {
+        "lesson": 9,
+        "meaningEn": "autumn",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-9.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-9-131.png"
+      }
+    },
+    "lesson-08-core-06": {
+      "coreId": "lesson-08-core-06",
+      "lesson": 8,
+      "character": "冬",
+      "meaningVi": "Mùa đông",
+      "mnemonicVi": "Hình dung bông tuyết trắng trong mùa ĐÔNG 冬.",
+      "hintImage": "./assets/kanji/lesson-08-core-06.webp",
+      "source": {
+        "lesson": 9,
+        "meaningEn": "winter",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-9.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-9-132.png"
+      }
+    },
+    "lesson-08-core-07": {
+      "coreId": "lesson-08-core-07",
+      "lesson": 8,
+      "character": "暑",
+      "meaningVi": "Nóng (thời tiết)",
+      "mnemonicVi": "Mặt trời 日 chiếu gay gắt làm trời nóng → THỬ 暑.",
+      "hintImage": "./assets/kanji/lesson-08-core-07.webp",
+      "source": {
+        "lesson": 15,
+        "meaningEn": "hot",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-15.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-15-228.png"
+      }
+    },
+    "lesson-08-core-08": {
+      "coreId": "lesson-08-core-08",
+      "lesson": 8,
+      "character": "寒",
+      "meaningVi": "Lạnh, rét",
+      "mnemonicVi": "Ngoài trời tuyết lạnh, mọi người co ro trong nhà → HÀN 寒.",
+      "hintImage": "./assets/kanji/lesson-08-core-08.webp",
+      "source": {
+        "lesson": 15,
+        "meaningEn": "cold",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-15.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-15-229.png"
+      }
+    },
+    "lesson-08-core-09": {
+      "coreId": "lesson-08-core-09",
+      "lesson": 8,
+      "character": "暖",
+      "meaningVi": "Ấm áp",
+      "mnemonicVi": "Ánh mặt trời 日 sưởi ấm → NOÃN 暖.",
+      "hintImage": "./assets/kanji/lesson-08-core-09.webp",
+      "source": {
+        "lesson": 26,
+        "meaningEn": "warm",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-26.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-26-404.png"
+      }
+    },
+    "lesson-08-core-10": {
+      "coreId": "lesson-08-core-10",
+      "lesson": 8,
+      "character": "涼",
+      "meaningVi": "Mát mẻ, dễ chịu",
+      "mnemonicVi": "Có nước 氵 và bóng mát, nghĩ đến làn gió mát → LƯƠNG 涼.",
+      "hintImage": "./assets/kanji/lesson-08-core-10.webp",
+      "source": {
+        "lesson": 26,
+        "meaningEn": "cool",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-26.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-26-405.png"
+      }
+    },
+    "lesson-09-core-01": {
+      "coreId": "lesson-09-core-01",
+      "lesson": 9,
+      "character": "体",
+      "meaningVi": "Cơ thể, thân thể",
+      "mnemonicVi": "Có người 亻 và phần “gốc” 本, nhớ thân THỂ 体.",
+      "hintImage": "./assets/kanji/lesson-09-core-01.webp",
+      "source": {
+        "lesson": 9,
+        "meaningEn": "body",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-9.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-9-142.png"
+      }
+    },
+    "lesson-09-core-02": {
+      "coreId": "lesson-09-core-02",
+      "lesson": 9,
+      "character": "頭",
+      "meaningVi": "Đầu, phần đầu",
+      "mnemonicVi": "Nơi cao nhất cơ thể là đầu → ĐẦU 頭.",
+      "hintImage": "./assets/kanji/lesson-09-core-02.webp",
+      "source": {
+        "lesson": 19,
+        "meaningEn": "head",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-19.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-19-289.png"
+      }
+    },
+    "lesson-09-core-03": {
+      "coreId": "lesson-09-core-03",
+      "lesson": 9,
+      "character": "顔",
+      "meaningVi": "Mặt, khuôn mặt",
+      "mnemonicVi": "Hình dung nét mặt hiện rõ trên khuôn mặt → NHAN 顔.",
+      "hintImage": "./assets/kanji/lesson-09-core-03.webp",
+      "source": {
+        "lesson": 19,
+        "meaningEn": "face",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-19.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-19-290.png"
+      }
+    },
+    "lesson-09-core-04": {
+      "coreId": "lesson-09-core-04",
+      "lesson": 9,
+      "character": "首",
+      "meaningVi": "Cổ; phần đứng đầu",
+      "mnemonicVi": "Nối đầu với thân là cổ → THỦ 首.",
+      "hintImage": "./assets/kanji/lesson-09-core-04.webp",
+      "source": {
+        "lesson": 9,
+        "meaningEn": "neck / head",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-9.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-9-143.png"
+      }
+    },
+    "lesson-09-core-05": {
+      "coreId": "lesson-09-core-05",
+      "lesson": 9,
+      "character": "心",
+      "meaningVi": "Tim; tâm trí, tấm lòng",
+      "mnemonicVi": "Hình trái tim cách điệu gợi tình cảm → TÂM 心.",
+      "hintImage": "./assets/kanji/lesson-09-core-05.webp",
+      "source": {
+        "lesson": 9,
+        "meaningEn": "heart",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-9.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-9-139.png"
+      }
+    },
+    "lesson-09-core-06": {
+      "coreId": "lesson-09-core-06",
+      "lesson": 9,
+      "character": "声",
+      "meaningVi": "Tiếng, giọng nói",
+      "mnemonicVi": "Một giọng nói vang lên để ta nghe thấy → THANH 声.",
+      "hintImage": "./assets/kanji/lesson-09-core-06.webp",
+      "source": {
+        "lesson": 19,
+        "meaningEn": "voice",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-19.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-19-291.png"
+      }
+    },
+    "lesson-09-core-07": {
+      "coreId": "lesson-09-core-07",
+      "lesson": 9,
+      "character": "病",
+      "meaningVi": "Bệnh tật, ốm đau",
+      "mnemonicVi": "Bộ bệnh 疒 nhìn như người nằm trên giường → BỆNH 病.",
+      "hintImage": "./assets/kanji/lesson-09-core-07.webp",
+      "source": {
+        "lesson": 7,
+        "meaningEn": "sick",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-7.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-7-111.png"
+      }
+    },
+    "lesson-09-core-08": {
+      "coreId": "lesson-09-core-08",
+      "lesson": 9,
+      "character": "薬",
+      "meaningVi": "Thuốc, dược phẩm",
+      "mnemonicVi": "Cỏ cây 艹 gợi thảo dược dùng làm thuốc → DƯỢC 薬.",
+      "hintImage": "./assets/kanji/lesson-09-core-08.webp",
+      "source": {
+        "lesson": 17,
+        "meaningEn": "medicine",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-17.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-17-267.png"
+      }
+    },
+    "lesson-09-core-09": {
+      "coreId": "lesson-09-core-09",
+      "lesson": 9,
+      "character": "科",
+      "meaningVi": "Ngành, khoa, môn học",
+      "mnemonicVi": "Phân chia kiến thức thành từng khoa → KHOA 科.",
+      "hintImage": "./assets/kanji/lesson-09-core-09.webp",
+      "source": null
+    },
+    "lesson-09-core-10": {
+      "coreId": "lesson-09-core-10",
+      "lesson": 9,
+      "character": "内",
+      "meaningVi": "Bên trong, nội bộ",
+      "mnemonicVi": "Một thứ gì nằm bên trong khung → NỘI 内.",
+      "hintImage": "./assets/kanji/lesson-09-core-10.webp",
+      "source": {
+        "lesson": 31,
+        "meaningEn": "inside",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-31.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-31-490.png"
+      }
+    },
+    "lesson-10-core-01": {
+      "coreId": "lesson-10-core-01",
+      "lesson": 10,
+      "character": "朝",
+      "meaningVi": "Buổi sáng",
+      "mnemonicVi": "Mặt trời bắt đầu lên: nghĩ đến một buổi TRIỀU 朝 sớm.",
+      "hintImage": "./assets/kanji/lesson-10-core-01.webp",
+      "source": {
+        "lesson": 9,
+        "meaningEn": "morning",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-9.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-9-133.png"
+      }
+    },
+    "lesson-10-core-02": {
+      "coreId": "lesson-10-core-02",
+      "lesson": 10,
+      "character": "昼",
+      "meaningVi": "Buổi trưa, ban ngày",
+      "mnemonicVi": "Vào TRÚ 昼, mặt trời lên cao giữa ngày.",
+      "hintImage": "./assets/kanji/lesson-10-core-02.webp",
+      "source": {
+        "lesson": 9,
+        "meaningEn": "daytime",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-9.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-9-134.png"
+      }
+    },
+    "lesson-10-core-03": {
+      "coreId": "lesson-10-core-03",
+      "lesson": 10,
+      "character": "夜",
+      "meaningVi": "Đêm, buổi tối",
+      "mnemonicVi": "Khi mặt trời lặn, bóng đêm phủ xuống → DẠ 夜.",
+      "hintImage": "./assets/kanji/lesson-10-core-03.webp",
+      "source": {
+        "lesson": 9,
+        "meaningEn": "night",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-9.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-9-138.png"
+      }
+    },
+    "lesson-10-core-04": {
+      "coreId": "lesson-10-core-04",
+      "lesson": 10,
+      "character": "夕",
+      "meaningVi": "Chiều tối, lúc hoàng hôn",
+      "mnemonicVi": "Hình vầng trăng khuyết gợi buổi TỊCH 夕 chiều.",
+      "hintImage": "./assets/kanji/lesson-10-core-04.webp",
+      "source": {
+        "lesson": 9,
+        "meaningEn": "early evening",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-9.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-9-135.png"
+      }
+    },
+    "lesson-10-core-05": {
+      "coreId": "lesson-10-core-05",
+      "lesson": 10,
+      "character": "方",
+      "meaningVi": "Phương hướng; cách; phía; người (lịch sự)",
+      "mnemonicVi": "Mũi tên chỉ một phương hướng → PHƯƠNG 方.",
+      "hintImage": "./assets/kanji/lesson-10-core-05.webp",
+      "source": {
+        "lesson": 9,
+        "meaningEn": "direction / person",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-9.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-9-136.png"
+      }
+    },
+    "lesson-10-core-06": {
+      "coreId": "lesson-10-core-06",
+      "lesson": 10,
+      "character": "晩",
+      "meaningVi": "Buổi tối; muộn",
+      "mnemonicVi": "Trời đã muộn, nhớ tới buổi VÃN 晩.",
+      "hintImage": "./assets/kanji/lesson-10-core-06.webp",
+      "source": {
+        "lesson": 9,
+        "meaningEn": "evening",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-9.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-9-137.png"
+      }
+    },
+    "lesson-10-core-07": {
+      "coreId": "lesson-10-core-07",
+      "lesson": 10,
+      "character": "計",
+      "meaningVi": "Đo, tính; kế hoạch",
+      "mnemonicVi": "Lấy lời 言 để tính toán và lên kế hoạch → KẾ 計.",
+      "hintImage": "./assets/kanji/lesson-10-core-07.webp",
+      "source": {
+        "lesson": 19,
+        "meaningEn": "to measure",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-19.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-19-299.png"
+      }
+    },
+    "lesson-10-core-08": {
+      "coreId": "lesson-10-core-08",
+      "lesson": 10,
+      "character": "曜",
+      "meaningVi": "Ngày trong tuần (thứ)",
+      "mnemonicVi": "Các ngày trong tuần được gọi với chữ 曜: 月曜・火曜・日曜.",
+      "hintImage": "./assets/kanji/lesson-10-core-08.webp",
+      "source": {
+        "lesson": 2,
+        "meaningEn": "weekday",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-2.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-2-24.png"
+      }
+    },
+    "lesson-10-core-09": {
+      "coreId": "lesson-10-core-09",
+      "lesson": 10,
+      "character": "以",
+      "meaningVi": "Lấy... làm mốc; từ... trở lên/xuống trong từ ghép",
+      "mnemonicVi": "Một mốc để so sánh: 以上 từ mức đó trở lên, 以下 từ mức đó trở xuống.",
+      "hintImage": "./assets/kanji/lesson-10-core-09.webp",
+      "source": {
+        "lesson": 19,
+        "meaningEn": "starting point",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-19.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-19-304.png"
+      }
+    },
+    "lesson-10-core-10": {
+      "coreId": "lesson-10-core-10",
+      "lesson": 10,
+      "character": "度",
+      "meaningVi": "Lần, mức độ; độ nhiệt/độ góc",
+      "mnemonicVi": "Thước đo chia vạch độ, mỗi lần tính là một 度.",
+      "hintImage": "./assets/kanji/lesson-10-core-10.webp",
+      "source": {
+        "lesson": 18,
+        "meaningEn": "times / degrees",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-18.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-18-283.png"
+      }
+    },
+    "lesson-11-core-01": {
+      "coreId": "lesson-11-core-01",
+      "lesson": 11,
+      "character": "止",
+      "meaningVi": "Dừng, ngừng",
+      "mnemonicVi": "Hình bàn chân đứng yên: dừng lại → CHỈ 止.",
+      "hintImage": "./assets/kanji/lesson-11-core-01.webp",
+      "source": {
+        "lesson": 16,
+        "meaningEn": "to stop",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-16.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-16-243.png"
+      }
+    },
+    "lesson-11-core-02": {
+      "coreId": "lesson-11-core-02",
+      "lesson": 11,
+      "character": "歩",
+      "meaningVi": "Đi bộ, bước đi",
+      "mnemonicVi": "Từng bước chân đều đều khi đi → BỘ 歩.",
+      "hintImage": "./assets/kanji/lesson-11-core-02.webp",
+      "source": {
+        "lesson": 16,
+        "meaningEn": "to walk",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-16.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-16-244.png"
+      }
+    },
+    "lesson-11-core-03": {
+      "coreId": "lesson-11-core-03",
+      "lesson": 11,
+      "character": "走",
+      "meaningVi": "Chạy",
+      "mnemonicVi": "Hình người chạy thật nhanh → TẨU 走.",
+      "hintImage": "./assets/kanji/lesson-11-core-03.webp",
+      "source": {
+        "lesson": 8,
+        "meaningEn": "to run",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-8.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-8-114.png"
+      }
+    },
+    "lesson-11-core-04": {
+      "coreId": "lesson-11-core-04",
+      "lesson": 11,
+      "character": "起",
+      "meaningVi": "Thức dậy, đứng lên; khởi đầu",
+      "mnemonicVi": "Một người đứng dậy, bắt đầu ngày mới → KHỞI 起.",
+      "hintImage": "./assets/kanji/lesson-11-core-04.webp",
+      "source": {
+        "lesson": 8,
+        "meaningEn": "to get up",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-8.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-8-115.png"
+      }
+    },
+    "lesson-11-core-05": {
+      "coreId": "lesson-11-core-05",
+      "lesson": 11,
+      "character": "持",
+      "meaningVi": "Cầm, mang, giữ, sở hữu",
+      "mnemonicVi": "Tay 扌 cầm một vật và giữ chặt → TRÌ 持.",
+      "hintImage": "./assets/kanji/lesson-11-core-05.webp",
+      "source": {
+        "lesson": 8,
+        "meaningEn": "to hold",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-8.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-8-126.png"
+      }
+    },
+    "lesson-11-core-06": {
+      "coreId": "lesson-11-core-06",
+      "lesson": 11,
+      "character": "待",
+      "meaningVi": "Đợi, chờ",
+      "mnemonicVi": "Đứng bên đường chờ ai đó → ĐÃI 待.",
+      "hintImage": "./assets/kanji/lesson-11-core-06.webp",
+      "source": {
+        "lesson": 5,
+        "meaningEn": "to wait",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-5.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-5-78.png"
+      }
+    },
+    "lesson-11-core-07": {
+      "coreId": "lesson-11-core-07",
+      "lesson": 11,
+      "character": "借",
+      "meaningVi": "Mượn, vay",
+      "mnemonicVi": "Muốn có đồ mà chưa sở hữu thì đi mượn → TÁ 借.",
+      "hintImage": "./assets/kanji/lesson-11-core-07.webp",
+      "source": {
+        "lesson": 18,
+        "meaningEn": "to borrow",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-18.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-18-277.png"
+      }
+    },
+    "lesson-11-core-08": {
+      "coreId": "lesson-11-core-08",
+      "lesson": 11,
+      "character": "貸",
+      "meaningVi": "Cho mượn, cho vay",
+      "mnemonicVi": "Đưa đồ mình có cho người khác dùng tạm → THẢI 貸.",
+      "hintImage": "./assets/kanji/lesson-11-core-08.webp",
+      "source": {
+        "lesson": 18,
+        "meaningEn": "to lend",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-18.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-18-279.png"
+      }
+    },
+    "lesson-11-core-09": {
+      "coreId": "lesson-11-core-09",
+      "lesson": 11,
+      "character": "始",
+      "meaningVi": "Bắt đầu",
+      "mnemonicVi": "Kéo màn lên để bắt đầu một việc → THỦY 始.",
+      "hintImage": "./assets/kanji/lesson-11-core-09.webp",
+      "source": {
+        "lesson": 17,
+        "meaningEn": "to begin",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-17.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-17-258.png"
+      }
+    },
+    "lesson-11-core-10": {
+      "coreId": "lesson-11-core-10",
+      "lesson": 11,
+      "character": "終",
+      "meaningVi": "Kết thúc, hoàn tất",
+      "mnemonicVi": "Sợi 糸 kéo đến điểm cuối → CHUNG 終.",
+      "hintImage": "./assets/kanji/lesson-11-core-10.webp",
+      "source": {
+        "lesson": 17,
+        "meaningEn": "to end",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-17.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-17-259.png"
+      }
+    },
+    "lesson-12-core-01": {
+      "coreId": "lesson-12-core-01",
+      "lesson": 12,
+      "character": "家",
+      "meaningVi": "Nhà, gia đình",
+      "mnemonicVi": "Mái nhà che chở cho các thành viên → GIA 家.",
+      "hintImage": "./assets/kanji/lesson-12-core-01.webp",
+      "source": {
+        "lesson": 13,
+        "meaningEn": "house",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-13.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-13-193.png"
+      }
+    },
+    "lesson-12-core-02": {
+      "coreId": "lesson-12-core-02",
+      "lesson": 12,
+      "character": "族",
+      "meaningVi": "Họ, nhóm người; gia tộc",
+      "mnemonicVi": "Nhiều người cùng một nhóm, một gia tộc → TỘC 族.",
+      "hintImage": "./assets/kanji/lesson-12-core-02.webp",
+      "source": {
+        "lesson": 13,
+        "meaningEn": "family / tribe",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-13.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-13-195.png"
+      }
+    },
+    "lesson-12-core-03": {
+      "coreId": "lesson-12-core-03",
+      "lesson": 12,
+      "character": "私",
+      "meaningVi": "Tôi; riêng tư",
+      "mnemonicVi": "Một phần thuộc về riêng mình → TƯ 私.",
+      "hintImage": "./assets/kanji/lesson-12-core-03.webp",
+      "source": {
+        "lesson": 13,
+        "meaningEn": "I / private",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-13.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-13-201.png"
+      }
+    },
+    "lesson-12-core-04": {
+      "coreId": "lesson-12-core-04",
+      "lesson": 12,
+      "character": "自",
+      "meaningVi": "Bản thân, tự mình",
+      "mnemonicVi": "Chỉ vào chính bản thân mình → TỰ 自.",
+      "hintImage": "./assets/kanji/lesson-12-core-04.webp",
+      "source": {
+        "lesson": 12,
+        "meaningEn": "self",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-12.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-12-180.png"
+      }
+    },
+    "lesson-12-core-05": {
+      "coreId": "lesson-12-core-05",
+      "lesson": 12,
+      "character": "親",
+      "meaningVi": "Cha mẹ; thân thiết",
+      "mnemonicVi": "Hình dung người cha mẹ luôn gần gũi, thân thiết → THÂN 親.",
+      "hintImage": "./assets/kanji/lesson-12-core-05.webp",
+      "source": {
+        "lesson": 13,
+        "meaningEn": "parent / intimacy",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-13.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-13-196.png"
+      }
+    },
+    "lesson-12-core-06": {
+      "coreId": "lesson-12-core-06",
+      "lesson": 12,
+      "character": "両",
+      "meaningVi": "Cả hai, đôi bên",
+      "mnemonicVi": "Hai bên cùng tồn tại → LƯỠNG 両.",
+      "hintImage": "./assets/kanji/lesson-12-core-06.webp",
+      "source": {
+        "lesson": 27,
+        "meaningEn": "both",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-27.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-27-422.png"
+      }
+    },
+    "lesson-12-core-07": {
+      "coreId": "lesson-12-core-07",
+      "lesson": 12,
+      "character": "兄",
+      "meaningVi": "Anh trai",
+      "mnemonicVi": "Người anh trai đứng trước em → HUYNH 兄.",
+      "hintImage": "./assets/kanji/lesson-12-core-07.webp",
+      "source": {
+        "lesson": 13,
+        "meaningEn": "older brother",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-13.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-13-197.png"
+      }
+    },
+    "lesson-12-core-08": {
+      "coreId": "lesson-12-core-08",
+      "lesson": 12,
+      "character": "弟",
+      "meaningVi": "Em trai",
+      "mnemonicVi": "Người em trai nhỏ hơn anh → ĐỆ 弟.",
+      "hintImage": "./assets/kanji/lesson-12-core-08.webp",
+      "source": {
+        "lesson": 13,
+        "meaningEn": "younger brother",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-13.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-13-199.png"
+      }
+    },
+    "lesson-12-core-09": {
+      "coreId": "lesson-12-core-09",
+      "lesson": 12,
+      "character": "姉",
+      "meaningVi": "Chị gái",
+      "mnemonicVi": "Chị gái, người phụ nữ (女) lớn tuổi hơn → TỶ 姉.",
+      "hintImage": "./assets/kanji/lesson-12-core-09.webp",
+      "source": {
+        "lesson": 13,
+        "meaningEn": "older sister",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-13.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-13-198.png"
+      }
+    },
+    "lesson-12-core-10": {
+      "coreId": "lesson-12-core-10",
+      "lesson": 12,
+      "character": "妹",
+      "meaningVi": "Em gái",
+      "mnemonicVi": "Em gái, người phụ nữ (女) nhỏ tuổi hơn → MUỘI 妹.",
+      "hintImage": "./assets/kanji/lesson-12-core-10.webp",
+      "source": {
+        "lesson": 13,
+        "meaningEn": "younger sister",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-13.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-13-200.png"
+      }
+    },
+    "lesson-13-core-01": {
+      "coreId": "lesson-13-core-01",
+      "lesson": 13,
+      "character": "活",
+      "meaningVi": "Hoạt động, sinh hoạt; sức sống",
+      "mnemonicVi": "Có nước (氵) và chiếc lưỡi (舌): hình dung nước giúp mọi sinh hoạt thêm sống động.",
+      "hintImage": "./assets/kanji/lesson-13-core-01.webp",
+      "source": {
+        "lesson": 24,
+        "meaningEn": "active",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-24.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-24-381.png"
+      }
+    },
+    "lesson-13-core-02": {
+      "coreId": "lesson-13-core-02",
+      "lesson": 13,
+      "character": "回",
+      "meaningVi": "Lần; quay, xoay, trở lại",
+      "mnemonicVi": "Một vòng bao quanh một vòng khác, như xoay một vòng rồi quay trở lại.",
+      "hintImage": "./assets/kanji/lesson-13-core-02.webp",
+      "source": {
+        "lesson": 18,
+        "meaningEn": "to turn round",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-18.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-18-284.png"
+      }
+    },
+    "lesson-13-core-03": {
+      "coreId": "lesson-13-core-03",
+      "lesson": 13,
+      "character": "主",
+      "meaningVi": "Chủ, người đứng đầu; chính",
+      "mnemonicVi": "Hình dung một ngọn đèn có điểm lửa ở trên: người chủ đứng ở vị trí trung tâm.",
+      "hintImage": "./assets/kanji/lesson-13-core-03.webp",
+      "source": {
+        "lesson": 13,
+        "meaningEn": "main",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-13.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-13-204.png"
+      }
+    },
+    "lesson-13-core-04": {
+      "coreId": "lesson-13-core-04",
+      "lesson": 13,
+      "character": "色",
+      "meaningVi": "Màu sắc; sắc thái",
+      "mnemonicVi": "Một bảng màu sắc với nhiều sắc độ để chọn.",
+      "hintImage": "./assets/kanji/lesson-13-core-04.webp",
+      "source": {
+        "lesson": 10,
+        "meaningEn": "color",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-10.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-10-158.png"
+      }
+    },
+    "lesson-13-core-05": {
+      "coreId": "lesson-13-core-05",
+      "lesson": 13,
+      "character": "形",
+      "meaningVi": "Hình dạng, dáng vẻ",
+      "mnemonicVi": "Các nét (彡) tạo đường viền làm hiện rõ hình dáng.",
+      "hintImage": "./assets/kanji/lesson-13-core-05.webp",
+      "source": {
+        "lesson": 26,
+        "meaningEn": "shape",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-26.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-26-416.png"
+      }
+    },
+    "lesson-13-core-06": {
+      "coreId": "lesson-13-core-06",
+      "lesson": 13,
+      "character": "品",
+      "meaningVi": "Vật phẩm, hàng hóa; chất lượng",
+      "mnemonicVi": "Ba cái miệng (口) như ba món hàng được bày bán.",
+      "hintImage": "./assets/kanji/lesson-13-core-06.webp",
+      "source": {
+        "lesson": 20,
+        "meaningEn": "goods",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-20.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-20-317.png"
+      }
+    },
+    "lesson-13-core-07": {
+      "coreId": "lesson-13-core-07",
+      "lesson": 13,
+      "character": "民",
+      "meaningVi": "Người dân; dân chúng",
+      "mnemonicVi": "Tưởng tượng người dân cùng tụ họp thành một cộng đồng.",
+      "hintImage": "./assets/kanji/lesson-13-core-07.webp",
+      "source": {
+        "lesson": 18,
+        "meaningEn": "people",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-18.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-18-286.png"
+      }
+    },
+    "lesson-13-core-08": {
+      "coreId": "lesson-13-core-08",
+      "lesson": 13,
+      "character": "服",
+      "meaningVi": "Quần áo; phục vụ, tuân theo",
+      "mnemonicVi": "Hãy nghĩ đến bộ trang phục mặc khi đi làm.",
+      "hintImage": "./assets/kanji/lesson-13-core-08.webp",
+      "source": {
+        "lesson": 12,
+        "meaningEn": "clother / to submit",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-12.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-12-191.png"
+      }
+    },
+    "lesson-13-core-09": {
+      "coreId": "lesson-13-core-09",
+      "lesson": 13,
+      "character": "犬",
+      "meaningVi": "Con chó",
+      "mnemonicVi": "Chữ 大 thêm một nét như cái đuôi của chú chó.",
+      "hintImage": "./assets/kanji/lesson-13-core-09.webp",
+      "source": {
+        "lesson": 10,
+        "meaningEn": "dog",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-10.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-10-160.png"
+      }
+    },
+    "lesson-13-core-10": {
+      "coreId": "lesson-13-core-10",
+      "lesson": 13,
+      "character": "同",
+      "meaningVi": "Giống nhau, cùng nhau",
+      "mnemonicVi": "Hai người cùng ở một khung, nói cùng một điều.",
+      "hintImage": "./assets/kanji/lesson-13-core-10.webp",
+      "source": {
+        "lesson": 19,
+        "meaningEn": "same",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-19.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-19-298.png"
+      }
+    },
+    "lesson-14-core-01": {
+      "coreId": "lesson-14-core-01",
+      "lesson": 14,
+      "character": "米",
+      "meaningVi": "Gạo; Mỹ (trong 米国)",
+      "mnemonicVi": "Nhìn các hạt gạo tỏa đều từ giữa ra: MỄ 米 là gạo.",
+      "hintImage": "./assets/kanji/lesson-14-core-01.webp",
+      "source": {
+        "lesson": 5,
+        "meaningEn": "rice",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-5.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-5-67.png"
+      }
+    },
+    "lesson-14-core-02": {
+      "coreId": "lesson-14-core-02",
+      "lesson": 14,
+      "character": "料",
+      "meaningVi": "Nguyên liệu; khoản phí; vật liệu",
+      "mnemonicVi": "Gạo (米) được chia thành từng phần (斗) làm nguyên liệu nấu ăn.",
+      "hintImage": "./assets/kanji/lesson-14-core-02.webp",
+      "source": {
+        "lesson": 11,
+        "meaningEn": "ingredients / fare",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-11.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-11-161.png"
+      }
+    },
+    "lesson-14-core-03": {
+      "coreId": "lesson-14-core-03",
+      "lesson": 14,
+      "character": "理",
+      "meaningVi": "Lý lẽ, nguyên lý; sắp xếp, xử lý",
+      "mnemonicVi": "Tưởng tượng sắp xếp từng thứ có trật tự để tìm ra lý do.",
+      "hintImage": "./assets/kanji/lesson-14-core-03.webp",
+      "source": {
+        "lesson": 11,
+        "meaningEn": "logic",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-11.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-11-162.png"
+      }
+    },
+    "lesson-14-core-04": {
+      "coreId": "lesson-14-core-04",
+      "lesson": 14,
+      "character": "肉",
+      "meaningVi": "Thịt",
+      "mnemonicVi": "Hình dung các thớ thịt bên trong miếng thịt.",
+      "hintImage": "./assets/kanji/lesson-14-core-04.webp",
+      "source": {
+        "lesson": 11,
+        "meaningEn": "meat",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-11.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-11-168.png"
+      }
+    },
+    "lesson-14-core-05": {
+      "coreId": "lesson-14-core-05",
+      "lesson": 14,
+      "character": "鳥",
+      "meaningVi": "Con chim",
+      "mnemonicVi": "Hình dáng con chim đang đậu trên cành.",
+      "hintImage": "./assets/kanji/lesson-14-core-05.webp",
+      "source": {
+        "lesson": 11,
+        "meaningEn": "bird",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-11.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-11-167.png"
+      }
+    },
+    "lesson-14-core-06": {
+      "coreId": "lesson-14-core-06",
+      "lesson": 14,
+      "character": "野",
+      "meaningVi": "Đồng ruộng; hoang dã",
+      "mnemonicVi": "Một khoảng đồng hoang trải dài đến tận xa.",
+      "hintImage": "./assets/kanji/lesson-14-core-06.webp",
+      "source": {
+        "lesson": 11,
+        "meaningEn": "field",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-11.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-11-171.png"
+      }
+    },
+    "lesson-14-core-07": {
+      "coreId": "lesson-14-core-07",
+      "lesson": 14,
+      "character": "菜",
+      "meaningVi": "Rau, rau xanh",
+      "mnemonicVi": "Có cỏ (艹) ở phía trên như những lá rau xanh.",
+      "hintImage": "./assets/kanji/lesson-14-core-07.webp",
+      "source": {
+        "lesson": 11,
+        "meaningEn": "vegetable",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-11.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-11-172.png"
+      }
+    },
+    "lesson-14-core-08": {
+      "coreId": "lesson-14-core-08",
+      "lesson": 14,
+      "character": "茶",
+      "meaningVi": "Trà",
+      "mnemonicVi": "Lá chè (艹) được hái, phơi và pha thành trà.",
+      "hintImage": "./assets/kanji/lesson-14-core-08.webp",
+      "source": {
+        "lesson": 11,
+        "meaningEn": "tea",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-11.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-11-169.png"
+      }
+    },
+    "lesson-14-core-09": {
+      "coreId": "lesson-14-core-09",
+      "lesson": 14,
+      "character": "飯",
+      "meaningVi": "Cơm, bữa ăn",
+      "mnemonicVi": "Bộ 食 gợi đến việc ăn: nhớ 飯 là cơm/bữa ăn.",
+      "hintImage": "./assets/kanji/lesson-14-core-09.webp",
+      "source": {
+        "lesson": 11,
+        "meaningEn": "meal / cooked rice",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-11.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-11-164.png"
+      }
+    },
+    "lesson-14-core-10": {
+      "coreId": "lesson-14-core-10",
+      "lesson": 14,
+      "character": "味",
+      "meaningVi": "Vị, hương vị; ý nghĩa",
+      "mnemonicVi": "Dùng miệng (口) nếm món ăn để cảm nhận vị.",
+      "hintImage": "./assets/kanji/lesson-14-core-10.webp",
+      "source": {
+        "lesson": 11,
+        "meaningEn": "taste",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-11.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-11-176.png"
+      }
+    },
+    "lesson-15-core-01": {
+      "coreId": "lesson-15-core-01",
+      "lesson": 15,
+      "character": "代",
+      "meaningVi": "Thay thế; đời, thời đại; tiền phí",
+      "mnemonicVi": "Người này thay người khác làm việc: ĐẠI 代.",
+      "hintImage": "./assets/kanji/lesson-15-core-01.webp",
+      "source": {
+        "lesson": 18,
+        "meaningEn": "age / to replace",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-18.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-18-278.png"
+      }
+    },
+    "lesson-15-core-02": {
+      "coreId": "lesson-15-core-02",
+      "lesson": 15,
+      "character": "使",
+      "meaningVi": "Sử dụng; sai khiến",
+      "mnemonicVi": "Người (亻) nhận việc phải làm: sử dụng, sai khiến.",
+      "hintImage": "./assets/kanji/lesson-15-core-02.webp",
+      "source": {
+        "lesson": 16,
+        "meaningEn": "to use",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-16.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-16-245.png"
+      }
+    },
+    "lesson-15-core-03": {
+      "coreId": "lesson-15-core-03",
+      "lesson": 15,
+      "character": "作",
+      "meaningVi": "Làm ra, tạo ra; tác phẩm",
+      "mnemonicVi": "Người (亻) cần mẫn tạo ra sản phẩm.",
+      "hintImage": "./assets/kanji/lesson-15-core-03.webp",
+      "source": {
+        "lesson": 11,
+        "meaningEn": "to make",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-11.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-11-174.png"
+      }
+    },
+    "lesson-15-core-04": {
+      "coreId": "lesson-15-core-04",
+      "lesson": 15,
+      "character": "化",
+      "meaningVi": "Biến hóa; thay đổi thành",
+      "mnemonicVi": "Tưởng tượng một người đổi hình dạng: biến hóa.",
+      "hintImage": "./assets/kanji/lesson-15-core-04.webp",
+      "source": {
+        "lesson": 10,
+        "meaningEn": "change",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-10.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-10-151.png"
+      }
+    },
+    "lesson-15-core-05": {
+      "coreId": "lesson-15-core-05",
+      "lesson": 15,
+      "character": "信",
+      "meaningVi": "Tin tưởng; tín hiệu, thư từ",
+      "mnemonicVi": "Người (亻) giữ đúng lời nói (言) nên được tin.",
+      "hintImage": "./assets/kanji/lesson-15-core-05.webp",
+      "source": {
+        "lesson": 31,
+        "meaningEn": "to believe",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-31.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-31-484.png"
+      }
+    },
+    "lesson-15-core-06": {
+      "coreId": "lesson-15-core-06",
+      "lesson": 15,
+      "character": "進",
+      "meaningVi": "Tiến lên, tiến bộ",
+      "mnemonicVi": "Từng bước đi trên đường (⻌) để tiến lên.",
+      "hintImage": "./assets/kanji/lesson-15-core-06.webp",
+      "source": {
+        "lesson": 20,
+        "meaningEn": "to advance",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-20.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-20-320.png"
+      }
+    },
+    "lesson-15-core-07": {
+      "coreId": "lesson-15-core-07",
+      "lesson": 15,
+      "character": "送",
+      "meaningVi": "Gửi, tiễn, đưa đi",
+      "mnemonicVi": "Theo con đường (⻌) để tiễn hay gửi thứ gì đi.",
+      "hintImage": "./assets/kanji/lesson-15-core-07.webp",
+      "source": {
+        "lesson": 16,
+        "meaningEn": "to send",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-16.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-16-246.png"
+      }
+    },
+    "lesson-15-core-08": {
+      "coreId": "lesson-15-core-08",
+      "lesson": 15,
+      "character": "返",
+      "meaningVi": "Trả lại; đáp lại",
+      "mnemonicVi": "Đi ngược đường (⻌) để trả lại thứ đã nhận.",
+      "hintImage": "./assets/kanji/lesson-15-core-08.webp",
+      "source": null
+    },
+    "lesson-15-core-09": {
+      "coreId": "lesson-15-core-09",
+      "lesson": 15,
+      "character": "洗",
+      "meaningVi": "Rửa, giặt",
+      "mnemonicVi": "Dùng nước (氵) rửa sạch đồ vật.",
+      "hintImage": "./assets/kanji/lesson-15-core-09.webp",
+      "source": {
+        "lesson": 16,
+        "meaningEn": "to wash",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-16.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-16-247.png"
+      }
+    },
+    "lesson-15-core-10": {
+      "coreId": "lesson-15-core-10",
+      "lesson": 15,
+      "character": "注",
+      "meaningVi": "Rót, đổ vào; chú ý; ghi chú",
+      "mnemonicVi": "Dòng nước (氵) đổ vào đúng chỗ: rót và tập trung chú ý.",
+      "hintImage": "./assets/kanji/lesson-15-core-10.webp",
+      "source": {
+        "lesson": 18,
+        "meaningEn": "to pour",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-18.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-18-287.png"
+      }
+    },
+    "lesson-16-core-01": {
+      "coreId": "lesson-16-core-01",
+      "lesson": 16,
+      "character": "場",
+      "meaningVi": "Nơi chốn; sân, bãi; địa điểm diễn ra hoạt động",
+      "mnemonicVi": "Có đất (土) và không gian rộng: hình dung một sân/bãi đông người.",
+      "hintImage": "./assets/kanji/lesson-16-core-01.webp",
+      "source": {
+        "lesson": 20,
+        "meaningEn": "place",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-20.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-20-305.png"
+      }
+    },
+    "lesson-16-core-02": {
+      "coreId": "lesson-16-core-02",
+      "lesson": 16,
+      "character": "建",
+      "meaningVi": "Xây, dựng; thiết lập",
+      "mnemonicVi": "Từng bước dựng khung nhà lên: kiến tạo một công trình.",
+      "hintImage": "./assets/kanji/lesson-16-core-02.webp",
+      "source": {
+        "lesson": 20,
+        "meaningEn": "to build",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-20.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-20-315.png"
+      }
+    },
+    "lesson-16-core-03": {
+      "coreId": "lesson-16-core-03",
+      "lesson": 16,
+      "character": "物",
+      "meaningVi": "Vật, đồ vật; sự vật",
+      "mnemonicVi": "Hãy nghĩ tới nhiều đồ vật được xếp trong một kho hàng.",
+      "hintImage": "./assets/kanji/lesson-16-core-03.webp",
+      "source": {
+        "lesson": 20,
+        "meaningEn": "thing",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-20.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-20-316.png"
+      }
+    },
+    "lesson-16-core-04": {
+      "coreId": "lesson-16-core-04",
+      "lesson": 16,
+      "character": "院",
+      "meaningVi": "Cơ quan, học viện, bệnh viện",
+      "mnemonicVi": "Nhìn cánh cổng (阝) dẫn vào một viện lớn.",
+      "hintImage": "./assets/kanji/lesson-16-core-04.webp",
+      "source": {
+        "lesson": 7,
+        "meaningEn": "institution",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-7.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-7-112.png"
+      }
+    },
+    "lesson-16-core-05": {
+      "coreId": "lesson-16-core-05",
+      "lesson": 16,
+      "character": "館",
+      "meaningVi": "Tòa nhà phục vụ một mục đích; quán, nhà",
+      "mnemonicVi": "Có phần 食 gợi ăn uống: tưởng tượng một tòa nhà/quán đón khách.",
+      "hintImage": "./assets/kanji/lesson-16-core-05.webp",
+      "source": {
+        "lesson": 18,
+        "meaningEn": "building",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-18.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-18-275.png"
+      }
+    },
+    "lesson-16-core-06": {
+      "coreId": "lesson-16-core-06",
+      "lesson": 16,
+      "character": "堂",
+      "meaningVi": "Sảnh lớn, nhà lớn; giảng đường",
+      "mnemonicVi": "Một đại sảnh có mái cao, nhiều người cùng sử dụng.",
+      "hintImage": "./assets/kanji/lesson-16-core-06.webp",
+      "source": {
+        "lesson": 20,
+        "meaningEn": "hall",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-20.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-20-309.png"
+      }
+    },
+    "lesson-16-core-07": {
+      "coreId": "lesson-16-core-07",
+      "lesson": 16,
+      "character": "室",
+      "meaningVi": "Phòng; gian phòng",
+      "mnemonicVi": "Một không gian có mái che 宀 được chia thành căn phòng.",
+      "hintImage": "./assets/kanji/lesson-16-core-07.webp",
+      "source": {
+        "lesson": 14,
+        "meaningEn": "room",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-14.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-14-210.png"
+      }
+    },
+    "lesson-16-core-08": {
+      "coreId": "lesson-16-core-08",
+      "lesson": 16,
+      "character": "工",
+      "meaningVi": "Công việc, kỹ thuật, công nghiệp",
+      "mnemonicVi": "Nhìn như một thanh dụng cụ nối hai mặt phẳng: liên tưởng thi công.",
+      "hintImage": "./assets/kanji/lesson-16-core-08.webp",
+      "source": {
+        "lesson": 3,
+        "meaningEn": "craft",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-3.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-3-38.png"
+      }
+    },
+    "lesson-16-core-09": {
+      "coreId": "lesson-16-core-09",
+      "lesson": 16,
+      "character": "図",
+      "meaningVi": "Hình vẽ, sơ đồ; bản đồ",
+      "mnemonicVi": "Bản vẽ có các nét nằm trong khung: một sơ đồ hướng dẫn.",
+      "hintImage": "./assets/kanji/lesson-16-core-09.webp",
+      "source": {
+        "lesson": 18,
+        "meaningEn": "drawing",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-18.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-18-273.png"
+      }
+    },
+    "lesson-16-core-10": {
+      "coreId": "lesson-16-core-10",
+      "lesson": 16,
+      "character": "号",
+      "meaningVi": "Số hiệu; tín hiệu; tiếng hô",
+      "mnemonicVi": "Một số hiệu dán trước cửa giúp tìm đúng phòng.",
+      "hintImage": "./assets/kanji/lesson-16-core-10.webp",
+      "source": {
+        "lesson": 28,
+        "meaningEn": "number",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-28.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-28-444.png"
+      }
+    },
+    "lesson-17-core-01": {
+      "coreId": "lesson-17-core-01",
+      "lesson": 17,
+      "character": "交",
+      "meaningVi": "Giao nhau, trao đổi, giao tiếp",
+      "mnemonicVi": "Hai con đường giao nhau tại một ngã tư.",
+      "hintImage": "./assets/kanji/lesson-17-core-01.webp",
+      "source": {
+        "lesson": 30,
+        "meaningEn": "to cross",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-30.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-30-480.png"
+      }
+    },
+    "lesson-17-core-02": {
+      "coreId": "lesson-17-core-02",
+      "lesson": 17,
+      "character": "通",
+      "meaningVi": "Thông qua, qua lại; giao thông",
+      "mnemonicVi": "Một con đường ⻌ cho mọi người đi qua.",
+      "hintImage": "./assets/kanji/lesson-17-core-02.webp",
+      "source": {
+        "lesson": 20,
+        "meaningEn": "to pass / to commute",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-20.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-20-319.png"
+      }
+    },
+    "lesson-17-core-03": {
+      "coreId": "lesson-17-core-03",
+      "lesson": 17,
+      "character": "動",
+      "meaningVi": "Chuyển động, hoạt động",
+      "mnemonicVi": "Vật nặng bắt đầu chuyển động khi có lực đẩy.",
+      "hintImage": "./assets/kanji/lesson-17-core-03.webp",
+      "source": {
+        "lesson": 16,
+        "meaningEn": "to move",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-16.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-16-242.png"
+      }
+    },
+    "lesson-17-core-04": {
+      "coreId": "lesson-17-core-04",
+      "lesson": 17,
+      "character": "乗",
+      "meaningVi": "Lên, đi (phương tiện); chất lên",
+      "mnemonicVi": "Tưởng tượng hành khách bước lên tàu.",
+      "hintImage": "./assets/kanji/lesson-17-core-04.webp",
+      "source": {
+        "lesson": 12,
+        "meaningEn": "to get on",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-12.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-12-182.png"
+      }
+    },
+    "lesson-17-core-05": {
+      "coreId": "lesson-17-core-05",
+      "lesson": 17,
+      "character": "降",
+      "meaningVi": "Xuống xe; rơi (mưa, tuyết)",
+      "mnemonicVi": "Hạt mưa rơi xuống, hành khách cũng xuống xe.",
+      "hintImage": "./assets/kanji/lesson-17-core-05.webp",
+      "source": {
+        "lesson": 31,
+        "meaningEn": "to descend",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-31.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-31-495.png"
+      }
+    },
+    "lesson-17-core-06": {
+      "coreId": "lesson-17-core-06",
+      "lesson": 17,
+      "character": "運",
+      "meaningVi": "Vận chuyển; vận may",
+      "mnemonicVi": "Hàng hóa theo đường ⻌ được vận chuyển đến nơi.",
+      "hintImage": "./assets/kanji/lesson-17-core-06.webp",
+      "source": {
+        "lesson": 16,
+        "meaningEn": "to transport / luck",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-16.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-16-241.png"
+      }
+    },
+    "lesson-17-core-07": {
+      "coreId": "lesson-17-core-07",
+      "lesson": 17,
+      "character": "転",
+      "meaningVi": "Lăn, xoay, chuyển đổi",
+      "mnemonicVi": "Bánh xe xoay vòng để chuyển động.",
+      "hintImage": "./assets/kanji/lesson-17-core-07.webp",
+      "source": {
+        "lesson": 12,
+        "meaningEn": "to roll over",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-12.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-12-181.png"
+      }
+    },
+    "lesson-17-core-08": {
+      "coreId": "lesson-17-core-08",
+      "lesson": 17,
+      "character": "帰",
+      "meaningVi": "Trở về, quay về",
+      "mnemonicVi": "Sau chuyến đi dài, cuối cùng quy về nhà.",
+      "hintImage": "./assets/kanji/lesson-17-core-08.webp",
+      "source": {
+        "lesson": 8,
+        "meaningEn": "to return",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-8.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-8-121.png"
+      }
+    },
+    "lesson-17-core-09": {
+      "coreId": "lesson-17-core-09",
+      "lesson": 17,
+      "character": "発",
+      "meaningVi": "Khởi phát, xuất phát, phát minh",
+      "mnemonicVi": "Một đoàn tàu nhận hiệu lệnh và xuất phát.",
+      "hintImage": "./assets/kanji/lesson-17-core-09.webp",
+      "source": {
+        "lesson": 20,
+        "meaningEn": "to start / to reveal",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-20.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-20-314.png"
+      }
+    },
+    "lesson-17-core-10": {
+      "coreId": "lesson-17-core-10",
+      "lesson": 17,
+      "character": "着",
+      "meaningVi": "Đến nơi; mặc vào; bám, dính",
+      "mnemonicVi": "Hình dung đã đến ga rồi mặc áo khoác xuống xe.",
+      "hintImage": "./assets/kanji/lesson-17-core-10.webp",
+      "source": {
+        "lesson": 12,
+        "meaningEn": "to reach / to wear",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-12.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-12-192.png"
+      }
+    },
+    "lesson-18-core-01": {
+      "coreId": "lesson-18-core-01",
+      "lesson": 18,
+      "character": "漢",
+      "meaningVi": "Hán; chỉ Trung Hoa trong từ Hán tự",
+      "mnemonicVi": "Nhớ tới chữ HÁN trong 漢字（かんじ）.",
+      "hintImage": "./assets/kanji/lesson-18-core-01.webp",
+      "source": {
+        "lesson": 14,
+        "meaningEn": "china",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-14.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-14-213.png"
+      }
+    },
+    "lesson-18-core-02": {
+      "coreId": "lesson-18-core-02",
+      "lesson": 18,
+      "character": "字",
+      "meaningVi": "Chữ, văn tự",
+      "mnemonicVi": "Dưới mái nhà 宀, trẻ 子 học từng chữ.",
+      "hintImage": "./assets/kanji/lesson-18-core-02.webp",
+      "source": {
+        "lesson": 14,
+        "meaningEn": "letter / character",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-14.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-14-214.png"
+      }
+    },
+    "lesson-18-core-03": {
+      "coreId": "lesson-18-core-03",
+      "lesson": 18,
+      "character": "文",
+      "meaningVi": "Văn, câu; bài văn; văn chương",
+      "mnemonicVi": "Những nét chữ đan thành một đoạn văn.",
+      "hintImage": "./assets/kanji/lesson-18-core-03.webp",
+      "source": {
+        "lesson": 14,
+        "meaningEn": "sentence / character",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-14.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-14-220.png"
+      }
+    },
+    "lesson-18-core-04": {
+      "coreId": "lesson-18-core-04",
+      "lesson": 18,
+      "character": "教",
+      "meaningVi": "Dạy, giáo dục; tôn giáo",
+      "mnemonicVi": "Thầy dạy học trò kiến thức ở lớp.",
+      "hintImage": "./assets/kanji/lesson-18-core-04.webp",
+      "source": {
+        "lesson": 14,
+        "meaningEn": "to teach",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-14.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-14-209.png"
+      }
+    },
+    "lesson-18-core-05": {
+      "coreId": "lesson-18-core-05",
+      "lesson": 18,
+      "character": "勉",
+      "meaningVi": "Gắng sức, cố gắng",
+      "mnemonicVi": "Dùng sức 力 để kiên trì cố gắng học.",
+      "hintImage": "./assets/kanji/lesson-18-core-05.webp",
+      "source": {
+        "lesson": 8,
+        "meaningEn": "to make efforts",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-8.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-8-122.png"
+      }
+    },
+    "lesson-18-core-06": {
+      "coreId": "lesson-18-core-06",
+      "lesson": 18,
+      "character": "習",
+      "meaningVi": "Học, luyện tập; thói quen",
+      "mnemonicVi": "Lặp lại một động tác cho thành thói quen.",
+      "hintImage": "./assets/kanji/lesson-18-core-06.webp",
+      "source": {
+        "lesson": 14,
+        "meaningEn": "to learn",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-14.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-14-212.png"
+      }
+    },
+    "lesson-18-core-07": {
+      "coreId": "lesson-18-core-07",
+      "lesson": 18,
+      "character": "英",
+      "meaningVi": "Anh (nước Anh/tiếng Anh); xuất sắc",
+      "mnemonicVi": "Liên tưởng chữ ANH trong 英語 (tiếng Anh).",
+      "hintImage": "./assets/kanji/lesson-18-core-07.webp",
+      "source": {
+        "lesson": 14,
+        "meaningEn": "English / excellent",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-14.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-14-221.png"
+      }
+    },
+    "lesson-18-core-08": {
+      "coreId": "lesson-18-core-08",
+      "lesson": 18,
+      "character": "考",
+      "meaningVi": "Suy nghĩ; xem xét, khảo cứu",
+      "mnemonicVi": "Cầm bút lên suy nghĩ, cân nhắc trước khi trả lời.",
+      "hintImage": "./assets/kanji/lesson-18-core-08.webp",
+      "source": {
+        "lesson": 16,
+        "meaningEn": "to think / idea",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-16.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-16-255.png"
+      }
+    },
+    "lesson-18-core-09": {
+      "coreId": "lesson-18-core-09",
+      "lesson": 18,
+      "character": "研",
+      "meaningVi": "Mài, nghiên cứu",
+      "mnemonicVi": "Mài đá 石 thật kỹ như người nghiên cứu vấn đề.",
+      "hintImage": "./assets/kanji/lesson-18-core-09.webp",
+      "source": {
+        "lesson": 17,
+        "meaningEn": "to polish",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-17.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-17-261.png"
+      }
+    },
+    "lesson-18-core-10": {
+      "coreId": "lesson-18-core-10",
+      "lesson": 18,
+      "character": "究",
+      "meaningVi": "Tìm đến tận cùng; nghiên cứu",
+      "mnemonicVi": "Đi sâu vào hang 穴 để tìm cho đến cùng sự thật.",
+      "hintImage": "./assets/kanji/lesson-18-core-10.webp",
+      "source": {
+        "lesson": 17,
+        "meaningEn": "research",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-17.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-17-262.png"
+      }
+    },
+    "lesson-19-core-01": {
+      "coreId": "lesson-19-core-01",
+      "lesson": 19,
+      "character": "問",
+      "meaningVi": "Hỏi, câu hỏi; vấn đề",
+      "mnemonicVi": "Đứng trước cổng 門 mở miệng 口 để hỏi.",
+      "hintImage": "./assets/kanji/lesson-19-core-01.webp",
+      "source": {
+        "lesson": 14,
+        "meaningEn": "question",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-14.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-14-223.png"
+      }
+    },
+    "lesson-19-core-02": {
+      "coreId": "lesson-19-core-02",
+      "lesson": 19,
+      "character": "題",
+      "meaningVi": "Đề bài; chủ đề, đầu đề",
+      "mnemonicVi": "Một chữ lớn đứng trên trang: đề bài cần làm.",
+      "hintImage": "./assets/kanji/lesson-19-core-02.webp",
+      "source": {
+        "lesson": 14,
+        "meaningEn": "topic",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-14.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-14-219.png"
+      }
+    },
+    "lesson-19-core-03": {
+      "coreId": "lesson-19-core-03",
+      "lesson": 19,
+      "character": "試",
+      "meaningVi": "Thử, kiểm tra; thi",
+      "mnemonicVi": "Làm thử một việc trước khi chính thức: thí nghiệm/thi.",
+      "hintImage": "./assets/kanji/lesson-19-core-03.webp",
+      "source": {
+        "lesson": 14,
+        "meaningEn": "to try",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-14.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-14-216.png"
+      }
+    },
+    "lesson-19-core-04": {
+      "coreId": "lesson-19-core-04",
+      "lesson": 19,
+      "character": "験",
+      "meaningVi": "Thử nghiệm, kiểm nghiệm; kinh nghiệm",
+      "mnemonicVi": "Tưởng tượng kiểm tra nhiều lần để nghiệm ra kết quả.",
+      "hintImage": "./assets/kanji/lesson-19-core-04.webp",
+      "source": {
+        "lesson": 14,
+        "meaningEn": "to examine",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-14.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-14-217.png"
+      }
+    },
+    "lesson-19-core-05": {
+      "coreId": "lesson-19-core-05",
+      "lesson": 19,
+      "character": "質",
+      "meaningVi": "Chất lượng; bản chất; chất vấn",
+      "mnemonicVi": "Xem kỹ một món hàng để biết chất lượng của nó.",
+      "hintImage": "./assets/kanji/lesson-19-core-05.webp",
+      "source": {
+        "lesson": 14,
+        "meaningEn": "quality",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-14.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-14-222.png"
+      }
+    },
+    "lesson-19-core-06": {
+      "coreId": "lesson-19-core-06",
+      "lesson": 19,
+      "character": "合",
+      "meaningVi": "Hợp, khớp; cùng nhau; đúng lúc",
+      "mnemonicVi": "Hai mảnh ghép khớp lại với nhau thì hợp.",
+      "hintImage": "./assets/kanji/lesson-19-core-06.webp",
+      "source": {
+        "lesson": 19,
+        "meaningEn": "to fit",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-19.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-19-295.png"
+      }
+    },
+    "lesson-19-core-07": {
+      "coreId": "lesson-19-core-07",
+      "lesson": 19,
+      "character": "答",
+      "meaningVi": "Đáp lại, trả lời",
+      "mnemonicVi": "Phía trên 竹 như các thẻ tre ghi đáp án.",
+      "hintImage": "./assets/kanji/lesson-19-core-07.webp",
+      "source": {
+        "lesson": 19,
+        "meaningEn": "to answer",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-19.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-19-296.png"
+      }
+    },
+    "lesson-19-core-08": {
+      "coreId": "lesson-19-core-08",
+      "lesson": 19,
+      "character": "用",
+      "meaningVi": "Dùng, sử dụng; công dụng",
+      "mnemonicVi": "Một công cụ luôn sẵn để dùng khi cần.",
+      "hintImage": "./assets/kanji/lesson-19-core-08.webp",
+      "source": {
+        "lesson": 18,
+        "meaningEn": "to use",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-18.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-18-285.png"
+      }
+    },
+    "lesson-19-core-09": {
+      "coreId": "lesson-19-core-09",
+      "lesson": 19,
+      "character": "紙",
+      "meaningVi": "Giấy",
+      "mnemonicVi": "Sợi 糸 được làm thành tờ giấy để viết.",
+      "hintImage": "./assets/kanji/lesson-19-core-09.webp",
+      "source": {
+        "lesson": 13,
+        "meaningEn": "paper",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-13.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-13-208.png"
+      }
+    },
+    "lesson-19-core-10": {
+      "coreId": "lesson-19-core-10",
+      "lesson": 19,
+      "character": "意",
+      "meaningVi": "Ý nghĩ, ý định; ý kiến",
+      "mnemonicVi": "Âm thanh 音 chạm đến tim 心 thành một ý nghĩ.",
+      "hintImage": "./assets/kanji/lesson-19-core-10.webp",
+      "source": {
+        "lesson": 18,
+        "meaningEn": "mind",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-18.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-18-288.png"
+      }
+    },
+    "lesson-20-core-01": {
+      "coreId": "lesson-20-core-01",
+      "lesson": 20,
+      "character": "引",
+      "meaningVi": "Kéo, dẫn; rút; trừ",
+      "mnemonicVi": "Dùng tay kéo một sợi dây căng về phía mình.",
+      "hintImage": "./assets/kanji/lesson-20-core-01.webp",
+      "source": {
+        "lesson": 16,
+        "meaningEn": "to pull",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-16.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-16-252.png"
+      }
+    },
+    "lesson-20-core-02": {
+      "coreId": "lesson-20-core-02",
+      "lesson": 20,
+      "character": "開",
+      "meaningVi": "Mở, khai mở",
+      "mnemonicVi": "Hai cánh cửa 門 mở ra: khai cửa.",
+      "hintImage": "./assets/kanji/lesson-20-core-02.webp",
+      "source": {
+        "lesson": 16,
+        "meaningEn": "to open",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-16.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-16-249.png"
+      }
+    },
+    "lesson-20-core-03": {
+      "coreId": "lesson-20-core-03",
+      "lesson": 20,
+      "character": "閉",
+      "meaningVi": "Đóng, khép",
+      "mnemonicVi": "Kéo cánh cửa 門 khép kín: bế cửa.",
+      "hintImage": "./assets/kanji/lesson-20-core-03.webp",
+      "source": {
+        "lesson": 16,
+        "meaningEn": "to close",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-16.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-16-250.png"
+      }
+    },
+    "lesson-20-core-04": {
+      "coreId": "lesson-20-core-04",
+      "lesson": 20,
+      "character": "去",
+      "meaningVi": "Rời đi; đã qua",
+      "mnemonicVi": "Một người bước đi khỏi nơi cũ.",
+      "hintImage": "./assets/kanji/lesson-20-core-04.webp",
+      "source": {
+        "lesson": 4,
+        "meaningEn": "past / to leave",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-4.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-4-61.png"
+      }
+    },
+    "lesson-20-core-05": {
+      "coreId": "lesson-20-core-05",
+      "lesson": 20,
+      "character": "死",
+      "meaningVi": "Chết, qua đời",
+      "mnemonicVi": "Nhìn chữ TỬ để nhớ nghĩa “chết”, không cần liên tưởng phức tạp.",
+      "hintImage": "./assets/kanji/lesson-20-core-05.webp",
+      "source": {
+        "lesson": 16,
+        "meaningEn": "death",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-16.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-16-256.png"
+      }
+    },
+    "lesson-20-core-06": {
+      "coreId": "lesson-20-core-06",
+      "lesson": 20,
+      "character": "集",
+      "meaningVi": "Tập hợp, thu thập",
+      "mnemonicVi": "Nhiều con chim 隹 tụ ở một cây 木: tập trung.",
+      "hintImage": "./assets/kanji/lesson-20-core-06.webp",
+      "source": {
+        "lesson": 19,
+        "meaningEn": "to gather",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-19.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-19-301.png"
+      }
+    },
+    "lesson-20-core-07": {
+      "coreId": "lesson-20-core-07",
+      "lesson": 20,
+      "character": "知",
+      "meaningVi": "Biết, hiểu; tri thức",
+      "mnemonicVi": "Có lời nói 口 và kiến thức: tri là biết.",
+      "hintImage": "./assets/kanji/lesson-20-core-07.webp",
+      "source": {
+        "lesson": 16,
+        "meaningEn": "to know",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-16.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-16-254.png"
+      }
+    },
+    "lesson-20-core-08": {
+      "coreId": "lesson-20-core-08",
+      "lesson": 20,
+      "character": "売",
+      "meaningVi": "Bán, buôn bán",
+      "mnemonicVi": "Một món hàng bày trước cửa chờ được bán.",
+      "hintImage": "./assets/kanji/lesson-20-core-08.webp",
+      "source": {
+        "lesson": 8,
+        "meaningEn": "to sell",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-8.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-8-118.png"
+      }
+    },
+    "lesson-20-core-09": {
+      "coreId": "lesson-20-core-09",
+      "lesson": 20,
+      "character": "説",
+      "meaningVi": "Giải thích; học thuyết, cách nói",
+      "mnemonicVi": "Dùng lời 言 để thuyết minh một điều khó hiểu.",
+      "hintImage": "./assets/kanji/lesson-20-core-09.webp",
+      "source": {
+        "lesson": 14,
+        "meaningEn": "explain",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-14.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-14-224.png"
+      }
+    },
+    "lesson-20-core-10": {
+      "coreId": "lesson-20-core-10",
+      "lesson": 20,
+      "character": "思",
+      "meaningVi": "Suy nghĩ, nhớ; tư tưởng",
+      "mnemonicVi": "Phần tim 心 ở dưới chứa những suy nghĩ.",
+      "hintImage": "./assets/kanji/lesson-20-core-10.webp",
+      "source": {
+        "lesson": 16,
+        "meaningEn": "to think",
+        "pageUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-16.html",
+        "illustrationUrl": "https://learnjapaneseaz.com/wp-content/uploads/2020/11/kanji-look-and-learn-lesson-16-253.png"
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Kanji Garden — JLPT N4",
+  "short_name": "Kanji N4",
+  "description": "Ôn Kanji N4 qua bài học, từ vựng liên kết và trò chơi ghi nhớ.",
+  "lang": "vi",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f7f6f0",
+  "theme_color": "#f7f6f0",
+  "icons": [
+    { "src": "./assets/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
