@@ -926,6 +926,8 @@ button:focus-visible, input:focus-visible { outline-color: rgba(40, 120, 227, .4
   .study-mode-tabs button { padding: 0 5px; font-size: 12px; }
   .vocab-typing-card { padding: 13px; border-radius: 13px; }
   .vocab-typing-meta { font-size: 12px; }
+  .vocab-typing-meta-actions { gap: 6px; }
+  .vocab-typing-shuffle { min-height: 32px; padding: 0 8px; font-size: 11px; }
   .vocab-typing-prompt { min-height: 165px; padding: 14px; }
   .kana-input-toolbar { align-items: flex-start; flex-direction: column; gap: 7px; padding: 8px; }
   .kana-input-toggle { width: 100%; }
@@ -1556,6 +1558,9 @@ button:focus-visible, input:focus-visible { outline-color: rgba(40, 120, 227, .4
 .vocab-typing-card { width: min(100%, 760px); margin: 0 auto; padding: 22px; border: 1px solid #dbe5f0; border-radius: 18px; background: #fff; box-shadow: 0 8px 24px -4px rgba(15, 23, 42, .08); }
 .vocab-typing-meta { display: flex; align-items: center; justify-content: space-between; gap: 10px; color: #475569; font-size: 13px; }
 .vocab-typing-meta > b { color: #64748b; }
+.vocab-typing-meta-actions { display: flex; align-items: center; gap: 9px; }
+.vocab-typing-meta-actions > b { color: #64748b; white-space: nowrap; }
+.vocab-typing-shuffle { min-height: 34px; display: inline-flex; align-items: center; gap: 5px; padding: 0 10px; font-size: 12px; white-space: nowrap; }
 .vocab-typing-prompt { min-height: 210px; display: grid; align-content: center; justify-items: center; gap: 12px; margin: 15px 0; padding: 20px; border: 1px solid #dbe5f0; border-radius: 14px; background: #f8fbff; text-align: center; }
 .vocab-typing-prompt > span { color: #64748b; }
 .vocab-typing-prompt > strong { color: #0f172a; font: 500 clamp(46px, 10vw, 76px)/1.2 var(--font-jp); overflow-wrap: anywhere; }
