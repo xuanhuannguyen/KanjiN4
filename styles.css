@@ -926,8 +926,6 @@ button:focus-visible, input:focus-visible { outline-color: rgba(40, 120, 227, .4
   .study-mode-tabs button { padding: 0 5px; font-size: 12px; }
   .vocab-typing-card { padding: 13px; border-radius: 13px; }
   .vocab-typing-meta { font-size: 12px; }
-  .vocab-typing-meta-actions { gap: 6px; }
-  .vocab-typing-shuffle { min-height: 32px; padding: 0 8px; font-size: 11px; }
   .vocab-typing-prompt { min-height: 165px; padding: 14px; }
   .kana-input-toolbar { align-items: flex-start; flex-direction: column; gap: 7px; padding: 8px; }
   .kana-input-toggle { width: 100%; }
@@ -1615,6 +1613,8 @@ button:focus-visible, input:focus-visible { outline-color: rgba(40, 120, 227, .4
 .reading-meaning-option > b { color: #2878e3; font: 500 18px/1.3 var(--font-jp); }
 .reading-meaning-option > span { line-height: 1.4; }
 @media (max-width: 720px) {
+  .vocab-typing-meta-actions { gap: 6px; }
+  .vocab-typing-shuffle { min-height: 32px; padding: 0 8px; font-size: 11px; }
   .vocab-study-meaning-face { gap: 10px; }
   .vocab-study-meaning-face .vocab-study-reading { font-size: 23px; }
   .vocab-study-meaning-face > p { font-size: 20px; }
