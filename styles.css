@@ -922,8 +922,21 @@ button:focus-visible, input:focus-visible { outline-color: rgba(40, 120, 227, .4
   .study-page-intro h2 { font-size: 19px; }
   .study-page-intro p { max-width: 245px; font-size: 12px; }
   .study-page-glyph { width: 45px; height: 45px; font-size: 27px; }
-  .study-mode-tabs { width: 100%; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .study-mode-tabs { width: 100%; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .study-mode-tabs button { padding: 0 5px; font-size: 12px; }
+  .vocab-typing-card { padding: 13px; border-radius: 13px; }
+  .vocab-typing-meta { font-size: 12px; }
+  .vocab-typing-prompt { min-height: 165px; padding: 14px; }
+  .kana-input-toolbar { align-items: flex-start; flex-direction: column; gap: 7px; padding: 8px; }
+  .kana-input-toggle { width: 100%; }
+  .kana-input-mode { flex: 1; }
+  .kana-typing-form { flex-direction: column; padding: 8px; }
+  .kana-typing-form input, .kana-typing-form .button { width: 100%; }
+  .kana-answer-feedback { grid-template-columns: minmax(0, 1fr); gap: 9px; padding: 11px; }
+  .kana-answer-feedback > strong { grid-column: 1; }
+  .hikari-detail-vocab-header { align-items: stretch; flex-direction: column; }
+  .hikari-detail-vocab-header-actions { width: 100%; justify-content: space-between; }
+  .hikari-kana-typing-dialog { padding: 20px 14px; }
   .hikari-study-card, .study-quiz-card, .study-match-card { border-radius: 12px; }
   .study-card-header { align-items: flex-start; padding: 10px; }
   .study-direction-control { width: 100%; }
@@ -1526,6 +1539,8 @@ button:focus-visible, input:focus-visible { outline-color: rgba(40, 120, 227, .4
 .core-detail.hikari-detail-overview .known-core-button { min-height: 46px; margin: 0; border-radius: 13px; font-size: 14px; }
 .hikari-detail-vocab-panel { position: sticky; top: 88px; min-width: 0; display: flex; flex-direction: column; gap: 16px; padding: 20px; border: 1px solid #dce5f0; border-radius: 22px; background: #f1f5f9; }
 .hikari-detail-vocab-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; padding-bottom: 14px; border-bottom: 1px solid #dce5f0; }
+.hikari-detail-vocab-header-actions { display: flex; flex: 0 0 auto; align-items: center; gap: 8px; }
+.hikari-core-vocab-typing-button { min-height: 38px; padding: 0 12px; border-radius: 12px; font-size: 12px; }
 .hikari-detail-vocab-header h2 { margin: 0; color: #172033; font-size: 19px; font-weight: 750; }
 .hikari-detail-vocab-header p { margin: 4px 0 0; color: #64748b; font-size: 13px; line-height: 1.4; }
 .hikari-detail-vocab-count { min-width: 32px; padding: 5px 9px; border-radius: 99px; color: #2878e3; background: #dbeafe; font-size: 12px; font-weight: 750; text-align: center; }
@@ -1538,6 +1553,45 @@ button:focus-visible, input:focus-visible { outline-color: rgba(40, 120, 227, .4
 .hikari-vocab-page-button:disabled { color: #a0acba; background: #f8fafc; cursor: not-allowed; }
 .hikari-vocab-page-indicator { min-width: 90px; color: #64748b; font-size: 13px; text-align: center; }
 .hikari-detail-empty-vocab { margin: 0; padding: 18px; border: 1px dashed #cbd5e1; border-radius: 14px; color: #64748b; font-size: 13px; text-align: center; }
+.vocab-typing-card { width: min(100%, 760px); margin: 0 auto; padding: 22px; border: 1px solid #dbe5f0; border-radius: 18px; background: #fff; box-shadow: 0 8px 24px -4px rgba(15, 23, 42, .08); }
+.vocab-typing-meta { display: flex; align-items: center; justify-content: space-between; gap: 10px; color: #475569; font-size: 13px; }
+.vocab-typing-meta > b { color: #64748b; }
+.vocab-typing-prompt { min-height: 210px; display: grid; align-content: center; justify-items: center; gap: 12px; margin: 15px 0; padding: 20px; border: 1px solid #dbe5f0; border-radius: 14px; background: #f8fbff; text-align: center; }
+.vocab-typing-prompt > span { color: #64748b; }
+.vocab-typing-prompt > strong { color: #0f172a; font: 500 clamp(46px, 10vw, 76px)/1.2 var(--font-jp); overflow-wrap: anywhere; }
+.kana-input-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 9px 11px; border: 1px solid #e2e8f0; border-radius: 12px 12px 0 0; background: #f8fafc; }
+.kana-input-toolbar > span { color: #64748b; font-size: 11px; font-weight: 750; letter-spacing: .04em; }
+.kana-input-toggle { display: inline-flex; align-items: center; gap: 4px; padding: 3px; border: 1px solid #dbe5f0; border-radius: 10px; background: #fff; }
+.kana-input-mode { min-width: 36px; height: 34px; padding: 0 8px; border: 0; border-radius: 7px; color: #64748b; background: transparent; cursor: pointer; font: 700 18px/1 var(--font-jp); }
+.kana-input-mode:hover:not(:disabled) { color: #2878e3; background: #eff6ff; }
+.kana-input-mode.active { color: #fff; background: #2878e3; box-shadow: 0 2px 5px rgba(40, 120, 227, .2); }
+.kana-input-mode:focus-visible, .kana-typing-form input:focus-visible, .kana-typing-form button:focus-visible, .vocab-typing-actions button:focus-visible { outline: 3px solid rgba(40, 120, 227, .28); outline-offset: 2px; }
+.kana-input-mode:disabled { cursor: not-allowed; opacity: .55; }
+.kana-typing-form { display: flex; gap: 8px; padding: 10px; border: 1px solid #e2e8f0; border-top: 0; border-radius: 0 0 12px 12px; background: #fff; }
+.kana-typing-form input { flex: 1; min-width: 0; min-height: 48px; padding: 8px 12px; border: 1px solid #dbe5f0; border-radius: 9px; color: #172033; background: #fff; font: 500 20px/1.4 var(--font-jp); text-align: center; }
+.kana-typing-form input::placeholder { color: #94a3b8; font: 500 14px/1.4 var(--font-sans); }
+.kana-typing-form input[readonly] { color: #64748b; background: #f8fafc; }
+.kana-typing-form .button { min-width: 118px; min-height: 48px; }
+.kana-answer-feedback { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 14px; padding: 14px; border: 1px solid; border-radius: 12px; }
+.kana-answer-feedback.correct { border-color: #a7e4c4; background: #effaf4; }
+.kana-answer-feedback.incorrect { border-color: #f1c3c5; background: #fff5f5; }
+.kana-answer-feedback > strong { grid-column: 1 / -1; color: #14734f; font-size: 16px; }
+.kana-answer-feedback.incorrect > strong { color: #a33438; }
+.kana-answer-feedback > div { min-width: 0; display: grid; gap: 5px; }
+.kana-answer-feedback > div > span { color: #64748b; font-size: 10px; font-weight: 750; letter-spacing: .05em; text-transform: uppercase; }
+.kana-answer-feedback > div > b { color: #2878e3; font: 600 21px/1.35 var(--font-jp); overflow-wrap: anywhere; }
+.kana-answer-feedback > div > p { margin: 0; color: #334155; font-size: 14px; line-height: 1.45; }
+.vocab-typing-actions { display: flex; justify-content: flex-end; margin-top: 14px; }
+.vocab-typing-actions .button { min-width: 112px; min-height: 42px; }
+.vocab-typing-result { max-width: 560px; }
+.hikari-vocab-dialog.hikari-kana-typing-dialog { width: min(580px, calc(100vw - 28px)); max-height: min(92dvh, 760px); overflow: auto; padding: 26px; }
+.hikari-kana-typing-dialog .hikari-dialog-close { z-index: 1; }
+.kana-dialog-title { margin: 18px 50px 5px 0; color: #172033; font-size: 23px; line-height: 1.25; }
+.kana-dialog-subtitle { margin: 0 0 14px; color: #64748b; font-size: 13px; line-height: 1.45; }
+.hikari-kana-typing-dialog .vocab-typing-card { padding: 0; border: 0; border-radius: 0; box-shadow: none; }
+.hikari-kana-typing-dialog .vocab-typing-prompt { min-height: 150px; }
+.hikari-kana-typing-dialog .vocab-typing-prompt > strong { font-size: clamp(40px, 9vw, 62px); }
+.hikari-kana-typing-dialog .vocab-typing-result { padding: 24px 12px 8px; }
 .vocab-study-meaning-face { width: min(100%, 620px); display: grid; justify-items: center; gap: 14px; }
 .vocab-study-meaning-face .vocab-study-reading { margin: 0; color: #2878e3; font-size: 27px; }
 .vocab-study-meaning-face > p { margin: 0; color: #172033; font-size: 25px; font-weight: 650; line-height: 1.45; }

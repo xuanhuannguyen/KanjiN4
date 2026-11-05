@@ -25,7 +25,7 @@ jobs:
       - name: Assemble static site
         run: |
           mkdir -p site/assets
-          cp index.html styles.css app.js stroke-practice.js sw.js manifest.webmanifest site/
+          cp index.html styles.css app.js kana-input.js stroke-practice.js sw.js manifest.webmanifest site/
           cp -R data site/
           cp assets/favicon.svg site/assets/
           cp -R assets/kanji assets/kanji-strokes site/assets/

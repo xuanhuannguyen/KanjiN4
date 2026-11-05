@@ -1,4 +1,5 @@
 import { mountKanjiStrokePreviews, openKanjiWritingPractice } from "./stroke-practice.js";
+import { convertRomajiToKana, normalizeKanaAnswer } from "./kana-input.js";
 
 const DATA_URL = new URL("./data/lessons.json", import.meta.url);
 const FLASHCARD_KANJI_URL = new URL("./data/flashcard-kanji.json", import.meta.url);
@@ -34,6 +35,8 @@ let vocabLimit = 72;
 let vocabSearch = "";
 let lessonSearch = "";
 let vocabCardPages = new Map();
+let lessonTypingSession = null;
+let coreVocabTypingSession = null;
 let flashcardState = {
   mode: "flashcard",
   domain: "core",
@@ -174,6 +177,114 @@ function studyTerm(item, domain = flashcardState.domain) { return domain === "vo
 function studyMeaning(item) { return item.meaning || item.meaningsVi?.[0] || ""; }
 function toHiragana(reading) { return String(reading || "").replace(/[ァ-ヶ]/g, character => String.fromCharCode(character.charCodeAt(0) - 0x60)); }
 function coreReadings(item) { return [item.on, item.kun].filter(reading => reading && reading !== "—").map(toHiragana).join(" · ") || "—"; }
+function createTypingSession(items, options = {}) {
+  return {
+    items: options.shuffle ? shuffled(items) : [...items],
+    index: 0,
+    value: "",
+    feedback: null,
+    correct: 0,
+    kanaMode: "off"
+  };
+}
+function ensureLessonTypingSession(lesson) {
+  if (!lessonTypingSession || lessonTypingSession.lessonNumber !== lesson.number) {
+    lessonTypingSession = { ...createTypingSession(lesson.vocab), lessonNumber: lesson.number };
+  }
+  return lessonTypingSession;
+}
+function renderKanaInputToggle(session, scope) {
+  const options = [["hiragana", "あ", "Bật gõ Hiragana bằng romaji"], ["katakana", "ア", "Bật gõ Katakana bằng romaji"]];
+  return `<div class="kana-input-toolbar"><span>Bộ gõ trong app</span><div class="kana-input-toggle" role="group" aria-label="Chế độ gõ kana">${options.map(([mode, label, title]) => `<button class="kana-input-mode ${session.kanaMode === mode ? "active" : ""}" type="button" data-kana-mode="${mode}" data-typing-scope="${scope}" aria-pressed="${session.kanaMode === mode}" title="${session.kanaMode === mode ? "Tắt bộ gõ trong app" : title}" ${session.feedback ? "disabled" : ""}>${label}</button>`).join("")}</div></div>`;
+}
+function renderTypingCompletion(session, scope) {
+  const replayLabel = scope === "core" ? "Luyện lại · trộn từ" : "Luyện lại từ đầu";
+  const closeButton = scope === "core" ? `<button class="button button-outline" type="button" data-action="close-vocab">Đóng</button>` : "";
+  return `<section class="study-result-card vocab-typing-result" aria-live="polite"><span class="result-sun">${icon("check", 25)}</span><span class="section-kicker">HOÀN TẤT PHIÊN GÕ</span><h2>${session.correct}<small> / ${session.items.length}</small></h2><p>câu trả lời đúng trong phiên này</p><div class="result-actions"><button class="button button-primary" type="button" data-typing-action="restart" data-typing-scope="${scope}">${replayLabel}</button>${closeButton}</div></section>`;
+}
+function renderTypingQuestion(session, scope) {
+  const item = session.items[session.index];
+  if (!item) return renderTypingCompletion(session, scope);
+  const answered = Boolean(session.feedback);
+  const feedback = session.feedback ? `<section class="kana-answer-feedback ${session.feedback.correct ? "correct" : "incorrect"}" aria-live="polite"><strong>${session.feedback.correct ? "Chính xác!" : "Chưa đúng"}</strong><div><span>Cách đọc</span><b lang="ja">${escapeHtml(toHiragana(item.reading || item.word))}</b></div><div><span>Nghĩa</span><p>${escapeHtml(studyMeaning(item))}</p></div></section>` : "";
+  return `<section class="vocab-typing-card" aria-label="Luyện gõ cách đọc từ vựng"><header class="vocab-typing-meta"><span class="scope-badge">${scope === "core" ? "Kanji Core" : `Bài ${String(route.lesson).padStart(2, "0")}`}</span><b>Câu ${session.index + 1} / ${session.items.length}</b></header><div class="vocab-typing-prompt"><span class="section-kicker">GÕ CÁCH ĐỌC</span><strong lang="ja">${escapeHtml(item.word)}</strong></div>${renderKanaInputToggle(session, scope)}<form class="kana-typing-form" data-typing-form="${scope}" autocomplete="off"><label class="visually-hidden" for="kana-answer-${scope}">Nhập cách đọc bằng hiragana hoặc katakana</label><input id="kana-answer-${scope}" data-typing-input data-typing-scope="${scope}" type="text" lang="ja" inputmode="text" autocapitalize="none" autocomplete="off" autocorrect="off" spellcheck="false" placeholder="Nhập cách đọc…" value="${escapeHtml(session.value)}" ${answered ? "readonly" : ""} /><button class="button button-primary" type="submit" ${answered || !session.value.trim() ? "disabled" : ""}>Kiểm tra</button></form>${feedback}${answered ? `<div class="vocab-typing-actions"><button class="button button-primary" type="button" data-typing-action="next" data-typing-scope="${scope}">Tiếp ${icon("arrow", 16)}</button></div>` : ""}</section>`;
+}
+function renderLessonTypingMode(lesson) {
+  const session = ensureLessonTypingSession(lesson);
+  return renderTypingQuestion(session, "lesson");
+}
+function renderCoreTypingDialog() {
+  const session = coreVocabTypingSession;
+  if (!session) return "";
+  const core = coreById.get(session.coreId);
+  if (!core) return "";
+  return `<form method="dialog"><button class="hikari-dialog-close" aria-label="Đóng">×</button></form><span class="hikari-test-kicker">KANJI CORE · ${escapeHtml(core.kanji)} · VOCAB</span><h2 class="kana-dialog-title" id="core-vocab-typing-title">Gõ kiểm tra cách đọc</h2><p class="kana-dialog-subtitle">Gõ cách đọc của từ bằng hiragana hoặc katakana.</p>${renderTypingQuestion(session, "core")}`;
+}
+function updateCoreTypingDialog({ focusInput = false } = {}) {
+  const dialog = app.querySelector("#vocab-dialog");
+  if (!dialog || !coreVocabTypingSession) return;
+  dialog.setAttribute("aria-labelledby", "core-vocab-typing-title");
+  dialog.classList.remove("hikari-kanji-art-dialog", "hikari-kanji-text-dialog");
+  dialog.classList.add("hikari-kana-typing-dialog");
+  dialog.innerHTML = renderCoreTypingDialog();
+  if (focusInput) dialog.querySelector("[data-typing-input]")?.focus();
+}
+function openCoreVocabTyping(coreId) {
+  const core = coreById.get(coreId);
+  const dialog = app.querySelector("#vocab-dialog");
+  const related = core ? relatedVocabFor(core) : [];
+  if (!core || !dialog || !related.length) return;
+  coreVocabTypingSession = { ...createTypingSession(related, { shuffle: true }), coreId };
+  if (dialog.dataset.kanaCloseBound !== "true") {
+    dialog.addEventListener("close", () => {
+      coreVocabTypingSession = null;
+      dialog.classList.remove("hikari-kana-typing-dialog");
+    });
+    dialog.dataset.kanaCloseBound = "true";
+  }
+  updateCoreTypingDialog();
+  dialog.showModal();
+  dialog.querySelector("[data-typing-input]")?.focus();
+}
+function getTypingSession(scope) {
+  return scope === "core" ? coreVocabTypingSession : scope === "lesson" ? lessonTypingSession : null;
+}
+function submitTypingAnswer(scope) {
+  const session = getTypingSession(scope);
+  const item = session?.items[session.index];
+  if (!session || !item || session.feedback) return;
+  const typed = convertRomajiToKana(session.value, session.kanaMode, { finalize: true }).trim();
+  if (!typed) return;
+  const correct = normalizeKanaAnswer(typed) === normalizeKanaAnswer(item.reading || item.word);
+  session.value = typed;
+  session.feedback = { correct };
+  if (correct) session.correct += 1;
+  if (scope === "core") updateCoreTypingDialog();
+  else render();
+}
+function advanceTypingSession(scope) {
+  const session = getTypingSession(scope);
+  if (!session?.feedback) return;
+  session.index += 1;
+  session.value = "";
+  session.feedback = null;
+  session.kanaMode = "off";
+  if (scope === "core") updateCoreTypingDialog({ focusInput: true });
+  else render();
+}
+function restartTypingSession(scope) {
+  if (scope === "core") {
+    const core = coreVocabTypingSession && coreById.get(coreVocabTypingSession.coreId);
+    if (!core) return;
+    coreVocabTypingSession = { ...createTypingSession(relatedVocabFor(core), { shuffle: true }), coreId: core.id };
+    updateCoreTypingDialog({ focusInput: true });
+    return;
+  }
+  const lesson = getLesson(route.lesson);
+  if (!lesson) return;
+  lessonTypingSession = { ...createTypingSession(lesson.vocab), lessonNumber: lesson.number };
+  render();
+}
 function readingMeaningOption(reading, meaning) {
   return `<div class="reading-meaning-option"><b lang="ja">${escapeHtml(reading)}</b><span>${escapeHtml(meaning)}</span></div>`;
 }
@@ -341,7 +452,7 @@ function openVocabDialog(id) {
   const dialog = app.querySelector("#vocab-dialog");
   if (!vocab || !dialog) return;
   dialog.setAttribute("aria-labelledby", "vocab-dialog-title");
-  dialog.classList.remove("hikari-kanji-art-dialog", "hikari-kanji-text-dialog");
+  dialog.classList.remove("hikari-kanji-art-dialog", "hikari-kanji-text-dialog", "hikari-kana-typing-dialog");
   const linkedCore = vocab.coreIds.map(key => coreById.get(key)).filter(Boolean);
   const selfCore = linkedCore.find(core => core.kanji === vocab.word);
   const otherLinkedCore = linkedCore.filter(core => core.kanji !== vocab.word);
@@ -361,6 +472,7 @@ function openFlashcardKanjiDialog(character, context = "flashcard") {
   const hanViet = core?.hanViet || flashcardKanjiByCharacter.get(character) || "Chưa có âm Hán Việt";
   const hasMemoryImage = Boolean(core?.hintImage);
   dialog.setAttribute("aria-labelledby", "flashcard-kanji-dialog-title");
+  dialog.classList.remove("hikari-kana-typing-dialog");
   dialog.classList.toggle("hikari-kanji-art-dialog", hasMemoryImage);
   dialog.classList.toggle("hikari-kanji-text-dialog", !hasMemoryImage);
   const meaningMarkup = core?.meaning ? `<p class="flashcard-kanji-dialog-meaning">${escapeHtml(core.meaning)}</p>` : "";
@@ -459,7 +571,7 @@ function renderCoreDetail(core) {
       </section>
     </div>
     <aside class="hikari-detail-vocab-panel" aria-labelledby="hikari-detail-vocab-title">
-      <header class="hikari-detail-vocab-header"><div><h2 id="hikari-detail-vocab-title">Kanji Vocab</h2><p>Từ vựng liên kết với chữ ${escapeHtml(core.kanji)}.</p></div><span class="hikari-detail-vocab-count">${related.length}</span></header>
+      <header class="hikari-detail-vocab-header"><div><h2 id="hikari-detail-vocab-title">Kanji Vocab</h2><p>Từ vựng liên kết với chữ ${escapeHtml(core.kanji)}.</p></div><div class="hikari-detail-vocab-header-actions"><span class="hikari-detail-vocab-count">${related.length}</span><button class="button button-outline hikari-core-vocab-typing-button" type="button" data-core-vocab-typing="${core.id}" ${related.length ? "" : "disabled"}>Gõ kiểm tra</button></div></header>
       ${vocabCards}
     </aside>
   </div>`;
@@ -689,12 +801,14 @@ function renderFlashcards() {
   const modes = [
     ["flashcard", "Flashcard"],
     ["matching", "Ghép cặp"],
-    ["quiz", "Trắc nghiệm"]
+    ["quiz", "Trắc nghiệm"],
+    ...(isVocab ? [["typing", "Gõ đọc"]] : [])
   ];
   const modeTabs = `<div class="study-mode-tabs" role="tablist" aria-label="Chế độ học ${isVocab ? "từ vựng" : "Kanji Core"}">${modes.map(([mode, label]) => `<button type="button" role="tab" aria-selected="${flashcardState.mode === mode}" class="${flashcardState.mode === mode ? "active" : ""}" data-study-mode="${mode}">${label}</button>`).join("")}</div>`;
   const knownCount = items.filter(item => isStudyKnown(item, domain)).length;
   const termPreview = studyTerm(items[0], domain);
-  const head = `<div class="study-page-top"><button class="back-link" type="button" data-nav="lesson">${icon("back", 18)} Bài ${lesson.number}: ${escapeHtml(lesson.title)}</button><span class="lesson-progress-pill">${knownCount}/${items.length} đã nhớ</span></div><section class="study-page-intro"><div><span class="section-kicker">${isVocab ? "TỪ VỰNG" : "KANJI CORE"} · BÀI ${String(lesson.number).padStart(2, "0")}</span><h2>${isVocab ? "Ôn từ vựng theo bài" : "Ôn từng chữ một"}</h2><p>Flashcard, ghép cặp và trắc nghiệm chỉ dùng nội dung bài ${lesson.number}.</p></div><span class="study-page-glyph" lang="ja">${escapeHtml([...termPreview][0] || "漢")}</span></section>${modeTabs}`;
+  const head = `<div class="study-page-top"><button class="back-link" type="button" data-nav="lesson">${icon("back", 18)} Bài ${lesson.number}: ${escapeHtml(lesson.title)}</button><span class="lesson-progress-pill">${knownCount}/${items.length} đã nhớ</span></div><section class="study-page-intro"><div><span class="section-kicker">${isVocab ? "TỪ VỰNG" : "KANJI CORE"} · BÀI ${String(lesson.number).padStart(2, "0")}</span><h2>${isVocab ? "Ôn từ vựng theo bài" : "Ôn từng chữ một"}</h2><p>${isVocab ? `Flashcard, ghép cặp, trắc nghiệm và gõ cách đọc trong bài ${lesson.number}.` : `Flashcard, ghép cặp và trắc nghiệm chỉ dùng Kanji Core của bài ${lesson.number}.`}</p></div><span class="study-page-glyph" lang="ja">${escapeHtml([...termPreview][0] || "漢")}</span></section>${modeTabs}`;
+  if (flashcardState.mode === "typing" && isVocab) return `${head}${renderLessonTypingMode(lesson)}`;
   if (flashcardState.mode === "quiz") return `${head}${renderLessonQuiz(lesson)}`;
   if (flashcardState.mode === "matching") return `${head}${renderLessonMatch(lesson)}`;
 
@@ -895,8 +1009,26 @@ app.addEventListener("click", event => {
     recordStudy(); saveProgress(); render(); return;
   }
   if (target.dataset.vocabOpen) { openVocabDialog(target.dataset.vocabOpen); return; }
+  if (target.dataset.coreVocabTyping) { openCoreVocabTyping(target.dataset.coreVocabTyping); return; }
   if (target.dataset.flashcardKanji) { openFlashcardKanjiDialog(target.dataset.flashcardKanji, target.dataset.kanjiContext); return; }
   if (target.dataset.action === "close-vocab") { app.querySelector("#vocab-dialog")?.close(); return; }
+  if (target.dataset.kanaMode) {
+    const scope = target.dataset.typingScope;
+    const session = getTypingSession(scope);
+    if (!session || session.feedback) return;
+    session.kanaMode = session.kanaMode === target.dataset.kanaMode ? "off" : target.dataset.kanaMode;
+    const toggle = target.closest(".kana-input-toggle");
+    toggle?.querySelectorAll("[data-kana-mode]").forEach(button => {
+      const active = session.kanaMode === button.dataset.kanaMode;
+      button.classList.toggle("active", active);
+      button.setAttribute("aria-pressed", String(active));
+      button.title = active ? "Tắt bộ gõ trong app" : button.dataset.kanaMode === "hiragana" ? "Bật gõ Hiragana bằng romaji" : "Bật gõ Katakana bằng romaji";
+    });
+    target.closest(".vocab-typing-card")?.querySelector("[data-typing-input]")?.focus();
+    return;
+  }
+  if (target.dataset.typingAction === "next") { advanceTypingSession(target.dataset.typingScope); return; }
+  if (target.dataset.typingAction === "restart") { restartTypingSession(target.dataset.typingScope); return; }
   if (target.dataset.core) { selectedCoreId = target.dataset.core; render(); return; }
   if (target.dataset.openCore) {
     const core = coreById.get(target.dataset.openCore);
@@ -910,6 +1042,7 @@ app.addEventListener("click", event => {
   if (target.dataset.studyMode) {
     const lesson = getLesson(route.lesson);
     if (!lesson) return;
+    if (target.dataset.studyMode === "typing" && flashcardState.domain === "vocab") ensureLessonTypingSession(lesson);
     flashcardState.mode = target.dataset.studyMode;
     flashcardState.flipped = false;
     if (flashcardState.mode === "quiz") startLessonQuiz(lesson);
@@ -977,8 +1110,31 @@ app.addEventListener("click", event => {
   }
 });
 
+app.addEventListener("submit", event => {
+  const form = event.target.closest("[data-typing-form]");
+  if (!form) return;
+  event.preventDefault();
+  submitTypingAnswer(form.dataset.typingForm);
+});
+
 app.addEventListener("input", event => {
   const input = event.target;
+  if (input.matches("[data-typing-input]")) {
+    const session = getTypingSession(input.dataset.typingScope);
+    if (!session || session.feedback) return;
+    const rawValue = input.value;
+    const caret = input.selectionStart ?? rawValue.length;
+    const nextValue = convertRomajiToKana(rawValue, session.kanaMode);
+    session.value = nextValue;
+    if (nextValue !== rawValue) {
+      const nextCaret = convertRomajiToKana(rawValue.slice(0, caret), session.kanaMode).length;
+      input.value = nextValue;
+      input.setSelectionRange(nextCaret, nextCaret);
+    }
+    const submit = input.closest("form")?.querySelector("[type='submit']");
+    if (submit) submit.disabled = !nextValue.trim();
+    return;
+  }
   if (input.id === "vocab-search") {
     vocabSearch = input.value;
     const list = document.querySelector("#vocab-results");

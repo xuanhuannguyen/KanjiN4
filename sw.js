@@ -1,9 +1,10 @@
-const CACHE_NAME = "kanji-garden-v61";
+const CACHE_NAME = "kanji-garden-v62";
 const APP_FILES = [
   "./",
   "./index.html",
   "./styles.css",
   "./app.js",
+  "./kana-input.js",
   "./stroke-practice.js",
   "./manifest.webmanifest",
   "./assets/favicon.svg",
