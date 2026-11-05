@@ -184,7 +184,7 @@ function createTypingSession(items, options = {}) {
     value: "",
     feedback: null,
     correct: 0,
-    kanaMode: "off"
+    kanaMode: "hiragana"
   };
 }
 function ensureLessonTypingSession(lesson) {
@@ -220,7 +220,7 @@ function renderCoreTypingDialog() {
   if (!core) return "";
   return `<form method="dialog"><button class="hikari-dialog-close" aria-label="Đóng">×</button></form><span class="hikari-test-kicker">KANJI CORE · ${escapeHtml(core.kanji)} · VOCAB</span><h2 class="kana-dialog-title" id="core-vocab-typing-title">Gõ kiểm tra cách đọc</h2><p class="kana-dialog-subtitle">Gõ cách đọc của từ bằng hiragana hoặc katakana.</p>${renderTypingQuestion(session, "core")}`;
 }
-function updateCoreTypingDialog({ focusInput = false } = {}) {
+function updateCoreTypingDialog({ focusInput = false, focusNext = false } = {}) {
   const dialog = app.querySelector("#vocab-dialog");
   if (!dialog || !coreVocabTypingSession) return;
   dialog.setAttribute("aria-labelledby", "core-vocab-typing-title");
@@ -228,6 +228,7 @@ function updateCoreTypingDialog({ focusInput = false } = {}) {
   dialog.classList.add("hikari-kana-typing-dialog");
   dialog.innerHTML = renderCoreTypingDialog();
   if (focusInput) dialog.querySelector("[data-typing-input]")?.focus();
+  else if (focusNext) dialog.querySelector('[data-typing-action="next"]')?.focus();
 }
 function openCoreVocabTyping(coreId) {
   const core = coreById.get(coreId);
@@ -259,8 +260,11 @@ function submitTypingAnswer(scope) {
   session.value = typed;
   session.feedback = { correct };
   if (correct) session.correct += 1;
-  if (scope === "core") updateCoreTypingDialog();
-  else render();
+  if (scope === "core") updateCoreTypingDialog({ focusNext: true });
+  else {
+    render();
+    app.querySelector('[data-typing-action="next"]')?.focus();
+  }
 }
 function advanceTypingSession(scope) {
   const session = getTypingSession(scope);
@@ -268,9 +272,11 @@ function advanceTypingSession(scope) {
   session.index += 1;
   session.value = "";
   session.feedback = null;
-  session.kanaMode = "off";
   if (scope === "core") updateCoreTypingDialog({ focusInput: true });
-  else render();
+  else {
+    render();
+    app.querySelector("[data-typing-input]")?.focus();
+  }
 }
 function restartTypingSession(scope) {
   if (scope === "core") {
@@ -284,6 +290,7 @@ function restartTypingSession(scope) {
   if (!lesson) return;
   lessonTypingSession = { ...createTypingSession(lesson.vocab), lessonNumber: lesson.number };
   render();
+  app.querySelector("[data-typing-input]")?.focus();
 }
 function readingMeaningOption(reading, meaning) {
   return `<div class="reading-meaning-option"><b lang="ja">${escapeHtml(reading)}</b><span>${escapeHtml(meaning)}</span></div>`;
@@ -1048,6 +1055,10 @@ app.addEventListener("click", event => {
     if (flashcardState.mode === "quiz") startLessonQuiz(lesson);
     else if (flashcardState.mode === "matching") startLessonMatch(lesson);
     render();
+    if (flashcardState.mode === "typing") {
+      const session = getTypingSession("lesson");
+      app.querySelector(session?.feedback ? '[data-typing-action="next"]' : "[data-typing-input]")?.focus();
+    }
     return;
   }
   if (target.dataset.studyAnswer) {
