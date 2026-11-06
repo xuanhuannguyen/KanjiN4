@@ -208,9 +208,14 @@ function renderTypingCompletion(session, scope) {
   return `<section class="study-result-card vocab-typing-result" aria-live="polite" tabindex="-1"><span class="result-sun">${icon("check", 25)}</span><span class="section-kicker">HOÀN TẤT PHIÊN GÕ</span><h2>${session.correct}<small> / ${session.items.length}</small></h2><p>Đã thuộc toàn bộ sau ${session.attempts} lượt gõ${retrySummary}.</p><div class="result-actions"><button class="button button-primary" type="button" data-typing-action="restart" data-typing-scope="${scope}">${replayLabel}</button>${shuffleButton}${closeButton}</div></section>`;
 }
 function typingCoreAnswerMarkup(item, scope) {
-  const coreIds = scope === "core"
-    ? [coreVocabTypingSession?.coreId]
-    : item.coreIds || [];
+  const coreIdsInWord = [...String(item.word || "")]
+    .map(character => coreByCharacter.get(character)?.id)
+    .filter(Boolean);
+  const coreIds = [
+    ...coreIdsInWord,
+    ...(item.coreIds || []),
+    ...(scope === "core" && coreVocabTypingSession?.coreId ? [coreVocabTypingSession.coreId] : [])
+  ];
   const cores = [...new Set(coreIds)].map(id => coreById.get(id)).filter(Boolean);
   if (!cores.length) return "";
   return `<div class="kana-answer-core"><span>Kanji Core</span><div class="kana-answer-core-list">${cores.map(core => `<span class="kana-answer-core-chip"><b lang="ja">${escapeHtml(core.kanji)}</b><small>${escapeHtml(core.hanViet || "")}</small><em>${escapeHtml(core.meaning || "")}</em></span>`).join("")}</div></div>`;
