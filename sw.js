@@ -1,4 +1,4 @@
-const CACHE_NAME = "kanji-garden-v66";
+const CACHE_NAME = "kanji-garden-v67";
 const APP_FILES = [
   "./",
   "./index.html",

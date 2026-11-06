@@ -1584,6 +1584,12 @@ button:focus-visible, input:focus-visible { outline-color: rgba(40, 120, 227, .4
 .kana-answer-feedback > div > span { color: #64748b; font-size: 10px; font-weight: 750; letter-spacing: .05em; text-transform: uppercase; }
 .kana-answer-feedback > div > b { color: #2878e3; font: 600 21px/1.35 var(--font-jp); overflow-wrap: anywhere; }
 .kana-answer-feedback > div > p { margin: 0; color: #334155; font-size: 14px; line-height: 1.45; }
+.kana-answer-feedback > .kana-answer-core { grid-column: 1 / -1; }
+.kana-answer-core-list { display: flex; flex-wrap: wrap; gap: 7px; }
+.kana-answer-core-chip { min-width: 110px; display: grid; grid-template-columns: auto 1fr; align-items: baseline; gap: 1px 7px; padding: 6px 9px; border: 1px solid #dce5f0; border-radius: 10px; background: #fff; }
+.kana-answer-core-chip b { grid-row: span 2; color: #172033; font: 600 24px/1.15 var(--font-jp); }
+.kana-answer-core-chip small { color: #2878e3; font-size: 10px; font-weight: 750; }
+.kana-answer-core-chip em { grid-column: 2; color: #64748b; font-size: 10px; font-style: normal; line-height: 1.3; }
 .vocab-typing-actions { display: flex; justify-content: flex-end; margin-top: 14px; }
 .vocab-typing-actions .button { min-width: 112px; min-height: 42px; }
 .vocab-typing-result { max-width: 560px; }

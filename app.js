@@ -207,11 +207,19 @@ function renderTypingCompletion(session, scope) {
   const retrySummary = retryCount ? ` · luyện lại ${retryCount} lượt` : "";
   return `<section class="study-result-card vocab-typing-result" aria-live="polite" tabindex="-1"><span class="result-sun">${icon("check", 25)}</span><span class="section-kicker">HOÀN TẤT PHIÊN GÕ</span><h2>${session.correct}<small> / ${session.items.length}</small></h2><p>Đã thuộc toàn bộ sau ${session.attempts} lượt gõ${retrySummary}.</p><div class="result-actions"><button class="button button-primary" type="button" data-typing-action="restart" data-typing-scope="${scope}">${replayLabel}</button>${shuffleButton}${closeButton}</div></section>`;
 }
+function typingCoreAnswerMarkup(item, scope) {
+  const coreIds = scope === "core"
+    ? [coreVocabTypingSession?.coreId]
+    : item.coreIds || [];
+  const cores = [...new Set(coreIds)].map(id => coreById.get(id)).filter(Boolean);
+  if (!cores.length) return "";
+  return `<div class="kana-answer-core"><span>Kanji Core</span><div class="kana-answer-core-list">${cores.map(core => `<span class="kana-answer-core-chip"><b lang="ja">${escapeHtml(core.kanji)}</b><small>${escapeHtml(core.hanViet || "")}</small><em>${escapeHtml(core.meaning || "")}</em></span>`).join("")}</div></div>`;
+}
 function renderTypingQuestion(session, scope) {
   const item = session.queue[0];
   if (!item) return renderTypingCompletion(session, scope);
   const answered = Boolean(session.feedback);
-  const feedback = session.feedback ? `<section class="kana-answer-feedback ${session.feedback.correct ? "correct" : "incorrect"}" aria-live="polite"><strong>${session.feedback.correct ? "Chính xác!" : "Chưa đúng · từ này sẽ được luyện lại sau"}</strong><div><span>Cách đọc</span><b lang="ja">${escapeHtml(toHiragana(item.reading || item.word))}</b></div><div><span>Nghĩa</span><p>${escapeHtml(studyMeaning(item))}</p></div></section>` : "";
+  const feedback = session.feedback ? `<section class="kana-answer-feedback ${session.feedback.correct ? "correct" : "incorrect"}" aria-live="polite"><strong>${session.feedback.correct ? "Chính xác!" : "Chưa đúng · từ này sẽ được luyện lại sau"}</strong><div><span>Cách đọc</span><b lang="ja">${escapeHtml(toHiragana(item.reading || item.word))}</b></div><div><span>Nghĩa</span><p>${escapeHtml(studyMeaning(item))}</p></div>${typingCoreAnswerMarkup(item, scope)}</section>` : "";
   const shuffleButton = scope === "lesson" ? `<button class="button button-outline vocab-typing-shuffle" type="button" data-typing-action="shuffle" data-typing-scope="lesson">${icon("repeat", 15)} Trộn từ</button>` : "";
   return `<section class="vocab-typing-card" aria-label="Luyện gõ cách đọc từ vựng"><header class="vocab-typing-meta"><span class="scope-badge">${scope === "core" ? "Kanji Core" : `Bài ${String(route.lesson).padStart(2, "0")}`}</span><div class="vocab-typing-meta-actions"><b>Đã thuộc ${session.correct} / ${session.items.length}</b>${shuffleButton}</div></header><div class="vocab-typing-prompt"><span class="section-kicker">GÕ CÁCH ĐỌC</span><strong lang="ja">${escapeHtml(item.word)}</strong></div>${renderKanaInputToggle(session, scope)}<form class="kana-typing-form" data-typing-form="${scope}" autocomplete="off"><label class="visually-hidden" for="kana-answer-${scope}">Nhập cách đọc bằng hiragana hoặc katakana</label><input id="kana-answer-${scope}" data-typing-input data-typing-scope="${scope}" type="text" lang="ja" inputmode="text" autocapitalize="none" autocomplete="off" autocorrect="off" spellcheck="false" placeholder="Nhập cách đọc…" value="${escapeHtml(session.value)}" ${answered ? "readonly" : ""} /><button class="button button-primary" type="submit" ${answered || !session.value.trim() ? "disabled" : ""}>Kiểm tra</button></form>${feedback}${answered ? `<div class="vocab-typing-actions"><button class="button button-primary" type="button" data-typing-action="next" data-typing-scope="${scope}">Tiếp ${icon("arrow", 16)}</button></div>` : ""}</section>`;
 }
