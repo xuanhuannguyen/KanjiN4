@@ -78,9 +78,7 @@
           "lesson-01-vocab-020",
           "lesson-01-vocab-021",
           "lesson-01-vocab-026",
-          "lesson-02-vocab-016",
-          "lesson-07-vocab-021",
-          "lesson-16-vocab-001"
+          "lesson-02-vocab-016"
         ],
         "hintImage": "./assets/kanji/lesson-01-core-02.webp",
         "referenceUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-20.html",
@@ -197,7 +195,6 @@
           "lesson-01-vocab-030",
           "lesson-01-vocab-031",
           "lesson-01-vocab-033",
-          "lesson-09-vocab-010",
           "lesson-12-vocab-030",
           "lesson-19-vocab-017"
         ],
@@ -2231,8 +2228,7 @@
           "lesson-02-vocab-025",
           "lesson-02-vocab-026",
           "lesson-02-vocab-027",
-          "lesson-02-vocab-028",
-          "lesson-09-vocab-003"
+          "lesson-02-vocab-028"
         ],
         "hintImage": "./assets/kanji/lesson-02-core-07.webp",
         "referenceUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-15.html",
@@ -4032,8 +4028,7 @@
           "lesson-03-vocab-016",
           "lesson-03-vocab-017",
           "lesson-03-vocab-018",
-          "lesson-03-vocab-019",
-          "lesson-19-vocab-023"
+          "lesson-03-vocab-019"
         ],
         "hintImage": "./assets/kanji/lesson-03-core-05.webp",
         "referenceUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-24.html",
@@ -4145,8 +4140,7 @@
           "lesson-03-vocab-024",
           "lesson-03-vocab-025",
           "lesson-03-vocab-026",
-          "lesson-03-vocab-027",
-          "lesson-12-vocab-017"
+          "lesson-03-vocab-027"
         ],
         "hintImage": "./assets/kanji/lesson-03-core-07.webp",
         "referenceUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-11.html",
@@ -5741,8 +5735,7 @@
         "vocabIds": [
           "lesson-04-vocab-003",
           "lesson-04-vocab-004",
-          "lesson-04-vocab-005",
-          "lesson-16-vocab-003"
+          "lesson-04-vocab-005"
         ],
         "hintImage": "./assets/kanji/lesson-04-core-02.webp",
         "referenceUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-6.html",
@@ -6042,8 +6035,7 @@
           "lesson-04-vocab-015",
           "lesson-04-vocab-016",
           "lesson-04-vocab-017",
-          "lesson-04-vocab-018",
-          "lesson-15-vocab-013"
+          "lesson-04-vocab-018"
         ],
         "hintImage": "./assets/kanji/lesson-04-core-07.webp",
         "referenceUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-32.html",
@@ -6169,7 +6161,6 @@
           "lesson-04-vocab-024",
           "lesson-04-vocab-025",
           "lesson-04-vocab-026",
-          "lesson-08-vocab-006",
           "lesson-14-vocab-024"
         ],
         "hintImage": "./assets/kanji/lesson-04-core-09.webp",
@@ -7258,8 +7249,7 @@
         "vocabIds": [
           "lesson-05-vocab-001",
           "lesson-05-vocab-004",
-          "lesson-15-vocab-016",
-          "lesson-16-vocab-015"
+          "lesson-15-vocab-016"
         ],
         "hintImage": "./assets/kanji/lesson-05-core-01.webp",
         "referenceUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-12.html",
@@ -7327,10 +7317,7 @@
           "lesson-05-vocab-005",
           "lesson-05-vocab-006",
           "lesson-05-vocab-007",
-          "lesson-10-vocab-014",
-          "lesson-12-vocab-002",
-          "lesson-15-vocab-016",
-          "lesson-16-vocab-015"
+          "lesson-15-vocab-016"
         ],
         "hintImage": "./assets/kanji/lesson-05-core-02.webp",
         "referenceUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-12.html",
@@ -7699,8 +7686,7 @@
         "vocabIds": [
           "lesson-05-vocab-021",
           "lesson-05-vocab-022",
-          "lesson-05-vocab-023",
-          "lesson-16-vocab-017"
+          "lesson-05-vocab-023"
         ],
         "hintImage": "./assets/kanji/lesson-05-core-08.webp",
         "referenceUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-20.html",
@@ -9249,8 +9235,7 @@
           "lesson-06-vocab-026",
           "lesson-06-vocab-027",
           "lesson-06-vocab-028",
-          "lesson-14-vocab-014",
-          "lesson-16-vocab-020"
+          "lesson-14-vocab-014"
         ],
         "hintImage": "./assets/kanji/lesson-06-core-08.webp",
         "referenceUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-20.html",
@@ -9370,8 +9355,7 @@
           "lesson-06-vocab-034",
           "lesson-06-vocab-035",
           "lesson-11-vocab-012",
-          "lesson-15-vocab-011",
-          "lesson-16-vocab-026"
+          "lesson-15-vocab-011"
         ],
         "hintImage": "./assets/kanji/lesson-06-core-10.webp",
         "referenceUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-17.html",
@@ -10725,8 +10709,7 @@
           "lesson-07-vocab-010",
           "lesson-07-vocab-028",
           "lesson-14-vocab-009",
-          "lesson-16-vocab-022",
-          "lesson-16-vocab-029"
+          "lesson-16-vocab-022"
         ],
         "hintImage": "./assets/kanji/lesson-07-core-03.webp",
         "referenceUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-18.html",
@@ -10892,8 +10875,7 @@
           "lesson-07-vocab-012",
           "lesson-07-vocab-025",
           "lesson-07-vocab-034",
-          "lesson-07-vocab-035",
-          "lesson-13-vocab-010"
+          "lesson-07-vocab-035"
         ],
         "hintImage": "./assets/kanji/lesson-07-core-06.webp",
         "referenceUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-12.html",
@@ -11059,7 +11041,6 @@
         "vocabIds": [
           "lesson-01-vocab-026",
           "lesson-07-vocab-020",
-          "lesson-07-vocab-021",
           "lesson-07-vocab-022",
           "lesson-07-vocab-024"
         ],
@@ -12432,7 +12413,6 @@
         "vocabIds": [
           "lesson-04-vocab-026",
           "lesson-08-vocab-005",
-          "lesson-08-vocab-006",
           "lesson-08-vocab-014"
         ],
         "hintImage": "./assets/kanji/lesson-08-core-03.webp",
@@ -13713,8 +13693,7 @@
         "vocabIds": [
           "lesson-02-vocab-026",
           "lesson-09-vocab-001",
-          "lesson-09-vocab-002",
-          "lesson-09-vocab-003"
+          "lesson-09-vocab-002"
         ],
         "hintImage": "./assets/kanji/lesson-09-core-01.webp",
         "referenceUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-9.html",
@@ -13894,7 +13873,6 @@
         "vocabIds": [
           "lesson-01-vocab-015",
           "lesson-09-vocab-009",
-          "lesson-09-vocab-010",
           "lesson-09-vocab-011",
           "lesson-09-vocab-012"
         ],
@@ -14070,7 +14048,6 @@
           "lesson-09-vocab-020",
           "lesson-09-vocab-021",
           "lesson-09-vocab-022",
-          "lesson-16-vocab-012",
           "lesson-20-vocab-019"
         ],
         "hintImage": "./assets/kanji/lesson-09-core-07.webp",
@@ -14191,8 +14168,7 @@
           "lesson-09-vocab-026",
           "lesson-09-vocab-027",
           "lesson-09-vocab-028",
-          "lesson-09-vocab-031",
-          "lesson-18-vocab-012"
+          "lesson-09-vocab-031"
         ],
         "hintImage": "./assets/kanji/lesson-09-core-09.webp",
         "referenceUrl": null,
@@ -15723,8 +15699,7 @@
         "lesson": 10,
         "vocabIds": [
           "lesson-05-vocab-005",
-          "lesson-10-vocab-006",
-          "lesson-10-vocab-014"
+          "lesson-10-vocab-006"
         ],
         "hintImage": "./assets/kanji/lesson-10-core-07.webp",
         "referenceUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-19.html",
@@ -16932,8 +16907,7 @@
         "vocabIds": [
           "lesson-11-vocab-026",
           "lesson-11-vocab-027",
-          "lesson-11-vocab-028",
-          "lesson-20-vocab-007"
+          "lesson-11-vocab-028"
         ],
         "hintImage": "./assets/kanji/lesson-11-core-09.webp",
         "referenceUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-17.html",
@@ -18082,7 +18056,6 @@
           "lesson-11-vocab-012",
           "lesson-11-vocab-024",
           "lesson-12-vocab-001",
-          "lesson-12-vocab-002",
           "lesson-12-vocab-003",
           "lesson-12-vocab-004",
           "lesson-12-vocab-005",
@@ -18329,7 +18302,6 @@
           "lesson-03-vocab-027",
           "lesson-12-vocab-015",
           "lesson-12-vocab-016",
-          "lesson-12-vocab-017",
           "lesson-12-vocab-018",
           "lesson-12-vocab-019"
         ],
@@ -20021,7 +19993,6 @@
           "lesson-09-vocab-025",
           "lesson-13-vocab-006",
           "lesson-13-vocab-013",
-          "lesson-14-vocab-005",
           "lesson-19-vocab-014"
         ],
         "hintImage": "./assets/kanji/lesson-13-core-06.webp",
@@ -20135,8 +20106,7 @@
         "vocabIds": [
           "lesson-07-vocab-011",
           "lesson-08-vocab-001",
-          "lesson-13-vocab-009",
-          "lesson-13-vocab-010"
+          "lesson-13-vocab-009"
         ],
         "hintImage": "./assets/kanji/lesson-13-core-08.webp",
         "referenceUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-12.html",
@@ -20927,7 +20897,6 @@
           "lesson-03-vocab-009",
           "lesson-13-vocab-013",
           "lesson-14-vocab-004",
-          "lesson-14-vocab-005",
           "lesson-14-vocab-006",
           "lesson-14-vocab-007",
           "lesson-14-vocab-008"
@@ -21368,8 +21337,7 @@
           "lesson-14-vocab-031",
           "lesson-14-vocab-032",
           "lesson-14-vocab-033",
-          "lesson-14-vocab-034",
-          "lesson-19-vocab-030"
+          "lesson-14-vocab-034"
         ],
         "hintImage": "./assets/kanji/lesson-14-core-10.webp",
         "referenceUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-11.html",
@@ -22646,7 +22614,6 @@
           "lesson-15-vocab-005",
           "lesson-15-vocab-006",
           "lesson-15-vocab-007",
-          "lesson-16-vocab-016",
           "lesson-19-vocab-025"
         ],
         "hintImage": "./assets/kanji/lesson-15-core-02.webp",
@@ -22767,7 +22734,6 @@
           "lesson-04-vocab-018",
           "lesson-08-vocab-022",
           "lesson-15-vocab-012",
-          "lesson-15-vocab-013",
           "lesson-15-vocab-014",
           "lesson-15-vocab-015",
           "lesson-15-vocab-016"
@@ -22839,7 +22805,6 @@
           "lesson-15-vocab-020",
           "lesson-15-vocab-027",
           "lesson-15-vocab-030",
-          "lesson-16-vocab-032",
           "lesson-17-vocab-039"
         ],
         "hintImage": "./assets/kanji/lesson-15-core-05.webp",
@@ -23122,9 +23087,7 @@
           "lesson-15-vocab-036",
           "lesson-15-vocab-037",
           "lesson-15-vocab-038",
-          "lesson-15-vocab-039",
-          "lesson-18-vocab-009",
-          "lesson-19-vocab-031"
+          "lesson-15-vocab-039"
         ],
         "hintImage": "./assets/kanji/lesson-15-core-10.webp",
         "referenceUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-18.html",
@@ -24533,9 +24496,7 @@
           "lesson-01-vocab-013",
           "lesson-01-vocab-021",
           "lesson-04-vocab-004",
-          "lesson-16-vocab-001",
           "lesson-16-vocab-002",
-          "lesson-16-vocab-003",
           "lesson-16-vocab-004",
           "lesson-17-vocab-015",
           "lesson-19-vocab-016",
@@ -24666,7 +24627,6 @@
           "lesson-16-vocab-009",
           "lesson-16-vocab-010",
           "lesson-16-vocab-011",
-          "lesson-17-vocab-013",
           "lesson-17-vocab-038"
         ],
         "hintImage": "./assets/kanji/lesson-16-core-03.webp",
@@ -24727,7 +24687,6 @@
         "vocabIds": [
           "lesson-06-vocab-017",
           "lesson-09-vocab-020",
-          "lesson-16-vocab-012",
           "lesson-16-vocab-013",
           "lesson-16-vocab-014"
         ],
@@ -24781,9 +24740,6 @@
           "lesson-05-vocab-023",
           "lesson-12-vocab-007",
           "lesson-15-vocab-006",
-          "lesson-16-vocab-015",
-          "lesson-16-vocab-016",
-          "lesson-16-vocab-017",
           "lesson-16-vocab-030"
         ],
         "hintImage": "./assets/kanji/lesson-16-core-05.webp",
@@ -24893,7 +24849,6 @@
           "lesson-16-vocab-023",
           "lesson-16-vocab-024",
           "lesson-16-vocab-034",
-          "lesson-18-vocab-011",
           "lesson-18-vocab-026"
         ],
         "hintImage": "./assets/kanji/lesson-16-core-07.webp",
@@ -24951,7 +24906,6 @@
           "lesson-06-vocab-034",
           "lesson-16-vocab-002",
           "lesson-16-vocab-025",
-          "lesson-16-vocab-026",
           "lesson-16-vocab-027"
         ],
         "hintImage": "./assets/kanji/lesson-16-core-08.webp",
@@ -25006,7 +24960,6 @@
         "vocabIds": [
           "lesson-07-vocab-008",
           "lesson-16-vocab-028",
-          "lesson-16-vocab-029",
           "lesson-16-vocab-030",
           "lesson-16-vocab-031"
         ],
@@ -25068,7 +25021,6 @@
         "vocabIds": [
           "lesson-04-vocab-021",
           "lesson-15-vocab-018",
-          "lesson-16-vocab-032",
           "lesson-16-vocab-033",
           "lesson-16-vocab-034",
           "lesson-16-vocab-035"
@@ -26519,7 +26471,6 @@
           "lesson-17-vocab-010",
           "lesson-17-vocab-011",
           "lesson-17-vocab-012",
-          "lesson-17-vocab-013",
           "lesson-20-vocab-030"
         ],
         "hintImage": "./assets/kanji/lesson-17-core-03.webp",
@@ -28441,7 +28392,6 @@
           "lesson-18-vocab-006",
           "lesson-18-vocab-007",
           "lesson-18-vocab-008",
-          "lesson-18-vocab-009",
           "lesson-20-vocab-022"
         ],
         "hintImage": "./assets/kanji/lesson-18-core-03.webp",
@@ -28504,8 +28454,6 @@
           "lesson-09-vocab-027",
           "lesson-16-vocab-021",
           "lesson-18-vocab-010",
-          "lesson-18-vocab-011",
-          "lesson-18-vocab-012",
           "lesson-18-vocab-013"
         ],
         "hintImage": "./assets/kanji/lesson-18-core-04.webp",
@@ -30224,7 +30172,6 @@
           "lesson-06-vocab-006",
           "lesson-15-vocab-007",
           "lesson-19-vocab-022",
-          "lesson-19-vocab-023",
           "lesson-19-vocab-024",
           "lesson-19-vocab-025",
           "lesson-19-vocab-028",
@@ -30341,8 +30288,6 @@
           "lesson-03-vocab-033",
           "lesson-14-vocab-032",
           "lesson-15-vocab-037",
-          "lesson-19-vocab-030",
-          "lesson-19-vocab-031",
           "lesson-19-vocab-032",
           "lesson-19-vocab-033"
         ],
@@ -31592,8 +31537,7 @@
           "lesson-11-vocab-027",
           "lesson-20-vocab-004",
           "lesson-20-vocab-005",
-          "lesson-20-vocab-006",
-          "lesson-20-vocab-007"
+          "lesson-20-vocab-006"
         ],
         "hintImage": "./assets/kanji/lesson-20-core-02.webp",
         "referenceUrl": "https://learnjapaneseaz.com/kanji-look-and-learn-lesson-16.html",

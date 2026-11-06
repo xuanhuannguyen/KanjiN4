@@ -550,7 +550,14 @@ function renderVocabulary() {
 }
 
 function relatedVocabFor(core) {
-  return core.vocabIds.map(id => vocabById.get(id)).filter(Boolean);
+  const seenWords = new Set();
+  return core.vocabIds.map(id => vocabById.get(id)).filter(item => {
+    if (!item) return false;
+    const word = String(item.word || "").normalize("NFKC").trim();
+    if (!word || seenWords.has(word)) return false;
+    seenWords.add(word);
+    return true;
+  });
 }
 
 function renderHikariVocabCard(item) {
