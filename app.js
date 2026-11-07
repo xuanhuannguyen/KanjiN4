@@ -51,6 +51,7 @@ let flashcardState = {
 };
 let testState = { started: false, submitted: false, questions: [], answers: {}, index: 0 };
 let toastTimer = null;
+let typingCoreInfoReturnFocus = null;
 
 function loadProgress() {
   try {
@@ -218,7 +219,7 @@ function typingCoreAnswerMarkup(item, scope) {
   ];
   const cores = [...new Set(coreIds)].map(id => coreById.get(id)).filter(Boolean);
   if (!cores.length) return "";
-  return `<div class="kana-answer-core"><span>Kanji Core</span><div class="kana-answer-core-list">${cores.map(core => `<span class="kana-answer-core-chip"><b lang="ja">${escapeHtml(core.kanji)}</b><small>${escapeHtml(core.hanViet || "")}</small><em>${escapeHtml(core.meaning || "")}</em></span>`).join("")}</div></div>`;
+  return `<div class="kana-answer-core"><span>Kanji Core</span><div class="kana-answer-core-list">${cores.map(core => `<button class="kana-answer-core-chip" type="button" data-typing-core-info="${core.id}" aria-label="Xem thông tin Kanji Core ${escapeHtml(core.kanji)}"><b lang="ja">${escapeHtml(core.kanji)}</b><small>${escapeHtml(core.hanViet || "")}</small><em>${escapeHtml(core.meaning || "")}</em></button>`).join("")}</div></div>`;
 }
 function renderTypingQuestion(session, scope) {
   const item = session.queue[0];
@@ -238,6 +239,26 @@ function renderCoreTypingDialog() {
   const core = coreById.get(session.coreId);
   if (!core) return "";
   return `<form method="dialog"><button class="hikari-dialog-close" aria-label="Đóng">×</button></form><span class="hikari-test-kicker">KANJI CORE · ${escapeHtml(core.kanji)} · VOCAB</span><h2 class="kana-dialog-title" id="core-vocab-typing-title">Gõ kiểm tra cách đọc</h2><p class="kana-dialog-subtitle">Gõ cách đọc của từ bằng hiragana hoặc katakana.</p>${renderTypingQuestion(session, "core")}`;
+}
+function openTypingCoreInfoDialog(coreId) {
+  const core = coreById.get(coreId);
+  const dialog = app.querySelector("#typing-kanji-info-dialog");
+  if (!core || !dialog || dialog.open) return;
+  const readingsMarkup = `<div class="flashcard-kanji-dialog-readings"><div><span>ÂM ON <small>音読み</small></span><b lang="ja">${escapeHtml(core.on || "—")}</b></div><div><span>ÂM KUN <small>訓読み</small></span><b lang="ja">${escapeHtml(core.kun || "—")}</b></div></div>`;
+  dialog.setAttribute("aria-labelledby", "typing-kanji-info-title");
+  dialog.innerHTML = `<form method="dialog"><button class="hikari-dialog-close" aria-label="Đóng">×</button></form><span class="hikari-test-kicker">BÀI ${String(core.lesson).padStart(2, "0")} · KANJI CORE</span><div class="typing-core-info-hero"><span class="flashcard-kanji-dialog-glyph" lang="ja">${escapeHtml(core.kanji)}</span><div><span class="flashcard-kanji-dialog-label">ÂM HÁN–VIỆT</span><h2 id="typing-kanji-info-title">${escapeHtml(core.hanViet)}</h2><p>${escapeHtml(core.meaning)}</p></div></div>${readingsMarkup}<section class="typing-core-info-memory"><span class="section-kicker">MẸO GHI NHỚ</span><p>${escapeHtml(getMnemonic(core))}</p></section>`;
+  typingCoreInfoReturnFocus = document.activeElement;
+  if (dialog.dataset.returnFocusBound !== "true") {
+    dialog.addEventListener("close", () => {
+      const returnTarget = typingCoreInfoReturnFocus;
+      typingCoreInfoReturnFocus = null;
+      const nextButton = app.querySelector('[data-typing-action="next"]');
+      if (nextButton) nextButton.focus();
+      else if (returnTarget?.isConnected) returnTarget.focus();
+    });
+    dialog.dataset.returnFocusBound = "true";
+  }
+  dialog.showModal();
 }
 function updateCoreTypingDialog({ focusInput = false, focusNext = false } = {}) {
   const dialog = app.querySelector("#vocab-dialog");
@@ -385,6 +406,7 @@ function renderShell(content) {
     </div></header>
     <div class="main-column"><main id="main-view" class="main-view">${content}</main><footer class="app-footer"><span>漢字 · N4</span><span>${lessons.length} bài học · ${allCore.length} Kanji · ${allVocab.length} từ</span><button class="tiny-text-button" type="button" data-action="reset-progress" aria-label="Đặt lại toàn bộ tiến độ">Đặt lại tiến độ</button></footer></div>
     <dialog id="vocab-dialog" class="hikari-vocab-dialog" aria-labelledby="vocab-dialog-title"></dialog>
+    <dialog id="typing-kanji-info-dialog" class="hikari-vocab-dialog typing-kanji-info-dialog" aria-labelledby="typing-kanji-info-title"></dialog>
     <dialog id="kanji-writing-dialog" class="kanji-writing-dialog" aria-label="Luyện viết Kanji"></dialog>
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
   </div>`;
@@ -1052,6 +1074,7 @@ app.addEventListener("click", event => {
   }
   if (target.dataset.vocabOpen) { openVocabDialog(target.dataset.vocabOpen); return; }
   if (target.dataset.coreVocabTyping) { openCoreVocabTyping(target.dataset.coreVocabTyping); return; }
+  if (target.dataset.typingCoreInfo) { openTypingCoreInfoDialog(target.dataset.typingCoreInfo); return; }
   if (target.dataset.flashcardKanji) { openFlashcardKanjiDialog(target.dataset.flashcardKanji, target.dataset.kanjiContext); return; }
   if (target.dataset.action === "close-vocab") { app.querySelector("#vocab-dialog")?.close(); return; }
   if (target.dataset.kanaMode) {
